@@ -1,6 +1,6 @@
 # Lab 1
 
-*Feature Engineering, Training (using built in algorithm - XGBoost), Deployment, Inferention*
+**Feature Engineering, Training (using built in algorithm - XGBoost), Deployment, Inferention**
 
 In this lab, you will learn how to use Amazon SageMaker to build, train, and deploy a machine learning (ML) model. We will use the popular XGBoost ML algorithm for this exercise. Amazon SageMaker is a modular, fully managed machine learning service that enables developers and data scientists to build, train, and deploy ML models at scale.
 
