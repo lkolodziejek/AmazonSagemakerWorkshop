@@ -18,7 +18,7 @@ Here are the one-time steps for onboarding to Amazon SageMaker Studio using Quic
 3. Click on “_Amazon SageMaker Studio_”
 4. Click on “_Quick start_”
 5. Define “_User name_” as “_machinelearning_”
-6. Select “_Create a new role_” under Execution role. Also make sure you are selecting specific S3 Bucket where all dataset and ML models will be pushed. If you don’t have any pre created S3 Bucket created then please create the same in “_eu-west-1_” region.
+6. Select “_Create a new role_” under Execution role. Also make sure you are selecting specific S3 Bucket where all dataset and ML models will be pushed. If you don’t have any pre created S3 Bucket created then please create the same in “_eu-west-1_” region. Click on “_Create role_”
 7. Enter the Role ARN in “_Custom IAM role ARN_” created on step 6 (not required when creating new role)
 8. Click “_Submit_”
 
