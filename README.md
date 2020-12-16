@@ -33,4 +33,6 @@ Here are the one-time steps for onboarding to Amazon SageMaker Studio using Quic
 12. Click “Notebook Python 3” card and wait a while till kernel will load 
 13. Write `print("hello")` and press `shift`+`enter`. If you see `hello` as a return value you are all set and ready to jump to next lab.
 
-#### **Congratulations!!** You have successfully created SageMaker Studio instance and launched the Notebook.
+![](https://user-images.githubusercontent.com/36265995/102408346-b87e0e00-3fed-11eb-826f-dcdfde0f7b26.png)
+
+### **Congratulations!!** You have successfully created SageMaker Studio instance and launched the Notebook.
