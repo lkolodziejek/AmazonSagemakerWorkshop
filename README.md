@@ -13,7 +13,7 @@ Create an S3 bucket in the same region as your Amazon SageMaker studio. Follow t
 Amazon SageMaker Studio is a web-based, integrated development environment (IDE) for machine learning that lets you build, train, debug, deploy, and monitor your machine learning models. Studio provides all the tools you need to take your models from experimentation to production while boosting your productivity.
 
 Here are the one-time steps for onboarding to Amazon SageMaker Studio using Quick Start:
-1. Open AWS console and switch to “_us-east-2_” region. (You can choose other region as well wherever [_SageMaker Studio is available_](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html))
+1. Open AWS console and switch to “_eu-west-2_” (Ireland) region. (You can choose other region as well wherever [_SageMaker Studio is available_](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html))
 2. Under services search for “_Amazon SageMaker_”
 3. Click on “_Amazon SageMaker Studio_”
 4. Click on “_Quick start_”
