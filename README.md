@@ -7,7 +7,7 @@
 * [**_Lab 3_**](www.google.com) - Auto ML on Amazon Sagemaker
 
 # Prerequisite
-Create an S3 bucket in the same region as your Amazon SageMaker studio. Follow the link for detailed steps if required (https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html). This bucket is used to store intermediate results computed during SageMaker studio.
+Create an S3 bucket in the same region as your Amazon SageMaker studio. The Ireland region will be used in all laboratories. Follow the link for detailed steps if required (https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html). This bucket is used to store intermediate results computed during SageMaker studio.
 
 # Launch Amazon SageMaker Studio
 Amazon SageMaker Studio is a web-based, integrated development environment (IDE) for machine learning that lets you build, train, debug, deploy, and monitor your machine learning models. Studio provides all the tools you need to take your models from experimentation to production while boosting your productivity.
