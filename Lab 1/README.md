@@ -13,33 +13,40 @@ In this lab, you will assume the role of a machine learning developer. Your task
 In this step you will use your Amazon SageMaker Studio notebook to preprocess the data that you need to train your machine learning model.
 
 #### 1. File → New Terminal
+
 #### 2. Then clone the git repo using below command:
 
 `git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
 
 #### 3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
 
+
 ![](https://user-images.githubusercontent.com/36265995/102468789-468be000-4052-11eb-9c06-039df000d2c7.png)
 
-### 4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
+
+#### 4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
+
 #### WSTAW TU ZDJECIE
-### 5. Select the kernel for your notebook: “_Python 3(Data Science)_”
+
+#### 5. Select the kernel for your notebook: “_Python 3(Data Science)_”
+
 
 ![](https://user-images.githubusercontent.com/36265995/102474260-b7ce9180-4058-11eb-8b0d-3c6c068803e7.png)
 
-### 6. In the next cell you will load the dataset into a pandas dataframe
+
+#### 6. In the next cell you will load the dataset into a pandas dataframe
 
 
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
 
-### 7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+### #7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
 
 
-### 8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+#### 8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
 
 
 This code will import some libraries in your Jupyter notebook environment:
@@ -54,13 +61,13 @@ Now, Let’s download the dataset by running the next cell.
 ![](https://user-images.githubusercontent.com/36265995/102478876-6d501380-405e-11eb-80d3-ab230da23d00.png)
 
 
-7. In the next cell you will load the dataset into a pandas dataframe
+#### 9. In the next cell you will load the dataset into a pandas dataframe
 
 
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
 
-8. Now let’s explore the data and understand the data distribution for each feature:
+#### 10. Now let’s explore the data and understand the data distribution for each feature:
 
 
 ![](https://user-images.githubusercontent.com/36265995/102480320-64f8d800-4060-11eb-86f1-230b873bc6b3.png)
@@ -69,12 +76,12 @@ Now, Let’s download the dataset by running the next cell.
 ![](https://user-images.githubusercontent.com/36265995/102480376-78a43e80-4060-11eb-8377-f5477668cca9.png)
 
 
-9. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
+#### 11. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
 
 
 ![](https://user-images.githubusercontent.com/36265995/102481237-bbb2e180-4061-11eb-8ff5-0ae68ca680d1.png)
 
-10. Next let's look at the relationship between each of the features and our target variable.
+#### 12. Next let's look at the relationship between each of the features and our target variable.
 
 
 ![](https://user-images.githubusercontent.com/36265995/102482986-5f04f600-4064-11eb-9a2d-67f66af58243.png)
@@ -90,8 +97,11 @@ Interestingly we see that churners appear:
 In addition, we see that churners take on very similar distributions for features like Day Mins and Day Charge. That's not surprising as we'd expect minutes spent talking to correlate with charges. Let's dig deeper into the relationships between our features.
 
 
-11. Now let’s look at how our features relate to one another
+#### 13. Now let’s look at how our features relate to one another
 
+![](https://user-images.githubusercontent.com/36265995/102484259-45fd4480-4066-11eb-95e6-1f024b71bd62.png)
+![](https://user-images.githubusercontent.com/36265995/102484275-4eee1600-4066-11eb-8490-b9a88a0a35a8.png)
+![](https://user-images.githubusercontent.com/36265995/102484307-58777e00-4066-11eb-818d-d6bcfad98ff3.png)
 
 
 
