@@ -21,70 +21,95 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 #### 3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102468789-468be000-4052-11eb-9c06-039df000d2c7.png)
+
 
 
 #### 4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
 
-#### WSTAW TU ZDJECIE
+
+ WSTAW TU ZDJECIE
+
 
 #### 5. Select the kernel for your notebook: “_Python 3(Data Science)_”
+
 
 
 ![](https://user-images.githubusercontent.com/36265995/102474260-b7ce9180-4058-11eb-8b0d-3c6c068803e7.png)
 
 
+
 #### 6. In the next cell you will load the dataset into a pandas dataframe
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
+
 
 
 #### 7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
+
 
 
 #### 8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
 
 
+
 This code will import some libraries in your Jupyter notebook environment:
+
 
 
 ![](https://user-images.githubusercontent.com/36265995/102478214-a20f9b00-405d-11eb-9e6c-6cb03d45c0d6.png)
 
 
+
 Now, Let’s download the dataset by running the next cell.
+
 
 
 ![](https://user-images.githubusercontent.com/36265995/102478876-6d501380-405e-11eb-80d3-ab230da23d00.png)
 
 
+
 #### 9. In the next cell you will load the dataset into a pandas dataframe
+
 
 
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
 
+
 #### 10. Now let’s explore the data and understand the data distribution for each feature:
+
 
 
 ![](https://user-images.githubusercontent.com/36265995/102480320-64f8d800-4060-11eb-86f1-230b873bc6b3.png)
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102480376-78a43e80-4060-11eb-8377-f5477668cca9.png)
+
 
 
 #### 11. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102481237-bbb2e180-4061-11eb-8ff5-0ae68ca680d1.png)
+
+
 
 #### 12. Next let's look at the relationship between each of the features and our target variable.
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102482986-5f04f600-4064-11eb-9a2d-67f66af58243.png)
+
 
 
 Interestingly we see that churners appear:
@@ -97,27 +122,42 @@ Interestingly we see that churners appear:
 In addition, we see that churners take on very similar distributions for features like Day Mins and Day Charge. That's not surprising as we'd expect minutes spent talking to correlate with charges. Let's dig deeper into the relationships between our features.
 
 
+
 #### 13. Now let’s look at how our features relate to one another
+
+
 
 ![](https://user-images.githubusercontent.com/36265995/102484259-45fd4480-4066-11eb-95e6-1f024b71bd62.png)
 ![](https://user-images.githubusercontent.com/36265995/102484275-4eee1600-4066-11eb-8490-b9a88a0a35a8.png)
 ![](https://user-images.githubusercontent.com/36265995/102484307-58777e00-4066-11eb-818d-d6bcfad98ff3.png)
 
+
+
 We see several features that essentially have 100% correlation with one another. Including these feature pairs in some machine learning algorithms can create catastrophic problems, while in others it will only introduce minor redundancy and bias.
+
+
 
 #### 14. Let's remove one feature from each of the highly correlated pairs: Day Charge from the pair with Day Mins, Night Charge from the pair with Night Mins, Intl Charge from the pair with Intl Mins:
 
+
+
 ![](https://user-images.githubusercontent.com/36265995/102485088-6da0dc80-4067-11eb-9dc3-242468a8e5cf.png)
+
 
 
 #### 15. Now we will convert all the categorical variables using one hot encoding
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102485577-1bac8680-4068-11eb-8b10-ff06ab335b67.png)
+
 
 
 #### 16. We will split our data set into 3 channels: train, test, validation set:
 
 
+
 ![](https://user-images.githubusercontent.com/36265995/102485622-2830df00-4068-11eb-912a-2c010b48f9ce.png)
+
+
 
