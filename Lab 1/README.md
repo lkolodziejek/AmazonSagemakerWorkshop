@@ -200,6 +200,11 @@ In this step, you will train your machine learning model with the training datas
 > Billable seconds: 15  
 > Managed Spot Training savings: 63.4%  
 
+5. Now, we will also check from AWS console to verify the training job finished.
+
+![](https://user-images.githubusercontent.com/36265995/102504660-64246e00-4081-11eb-9baf-8e07d2250144.png)
+
+**Now.** You successfully trained XGBoost model!!
 
 # Deploy the model
 
