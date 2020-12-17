@@ -15,7 +15,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 1. File → New Terminal
 2. Then clone the git repo using below command:
 
-`git clone https://github.com/aws-samples/amazon-sagemaker-immersion-day.git`
+`git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
 
 3. After completion of step 2 you will have “_XXXXXXXXXXX_” folder created in “_left panel_” of the studio:
 #### WSTAW TU ZDJECIE
