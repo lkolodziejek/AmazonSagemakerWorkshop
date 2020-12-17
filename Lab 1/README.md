@@ -183,3 +183,7 @@ In this step, you will train your machine learning model with the training datas
 
 ![](https://user-images.githubusercontent.com/36265995/102494683-510ba100-4075-11eb-9842-f738b234108d.png)
 
+
+2. Specify train and validation data set location:
+
+![](https://user-images.githubusercontent.com/36265995/102495608-9381ad80-4076-11eb-849a-3d5a1b620f90.png)
