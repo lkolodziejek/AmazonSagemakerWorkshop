@@ -171,3 +171,10 @@ We see several features that essentially have 100% correlation with one another.
 **Congratulations!!** You have successfully prepared the data to train an XGBoost model.
 
 # Train & Tune the model
+
+In this step, you will train your machine learning model with the training dataset, which you uploaded in Amazon S3 bucket in previous step.
+
+1. First, we will specify XGBoost ECR container location.
+
+![](https://user-images.githubusercontent.com/36265995/102494683-510ba100-4075-11eb-9842-f738b234108d.png)
+
