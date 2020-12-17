@@ -103,5 +103,21 @@ In addition, we see that churners take on very similar distributions for feature
 ![](https://user-images.githubusercontent.com/36265995/102484275-4eee1600-4066-11eb-8490-b9a88a0a35a8.png)
 ![](https://user-images.githubusercontent.com/36265995/102484307-58777e00-4066-11eb-818d-d6bcfad98ff3.png)
 
+We see several features that essentially have 100% correlation with one another. Including these feature pairs in some machine learning algorithms can create catastrophic problems, while in others it will only introduce minor redundancy and bias.
 
+#### 14. Let's remove one feature from each of the highly correlated pairs: Day Charge from the pair with Day Mins, Night Charge from the pair with Night Mins, Intl Charge from the pair with Intl Mins:
+
+![](https://user-images.githubusercontent.com/36265995/102485088-6da0dc80-4067-11eb-9dc3-242468a8e5cf.png)
+
+
+#### 15. Now we will convert all the categorical variables using one hot encoding
+
+
+![](https://user-images.githubusercontent.com/36265995/102485577-1bac8680-4068-11eb-8b10-ff06ab335b67.png)
+
+
+#### 16. We will split our data set into 3 channels: train, test, validation set:
+
+
+![](https://user-images.githubusercontent.com/36265995/102485622-2830df00-4068-11eb-912a-2c010b48f9ce.png)
 
