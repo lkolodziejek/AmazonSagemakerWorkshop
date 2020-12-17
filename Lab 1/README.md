@@ -31,3 +31,10 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
 
+6. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+
+This code will import some libraries in your Jupyter notebook environment:
+
+![](https://user-images.githubusercontent.com/36265995/102478214-a20f9b00-405d-11eb-9e6c-6cb03d45c0d6.png)
+
+
