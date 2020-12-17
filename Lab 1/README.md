@@ -218,4 +218,4 @@ Now we will check AWS console view as well
 
 ![](https://user-images.githubusercontent.com/36265995/102505442-473c6a80-4082-11eb-9f55-2e521b40168a.png)
 
-*Congratulations!!** You successfully deployed XGBoost model!!
+**Congratulations!!** You successfully deployed XGBoost model!!
