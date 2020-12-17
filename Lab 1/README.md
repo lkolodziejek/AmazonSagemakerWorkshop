@@ -40,7 +40,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
 
-### #7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+#### 7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
