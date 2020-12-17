@@ -40,15 +40,8 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-6. In the next cell you will load the dataset into a pandas dataframe
 
-
-
-![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
-
-
-
-7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+6. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
 
@@ -56,7 +49,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+7. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
 
 
 
@@ -76,7 +69,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-9. In the next cell you will load the dataset into a pandas dataframe
+8. In the next cell you will load the dataset into a pandas dataframe
 
 
 
@@ -84,7 +77,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-10. Now let’s explore the data and understand the data distribution for each feature:
+9. Now let’s explore the data and understand the data distribution for each feature:
 
 
 
