@@ -205,3 +205,5 @@ In this step, you will train your machine learning model with the training datas
 # Deploy the model
 
 In this step, you will deploy the trained model to a real-time HTTPS endpoint, reformat then load the CSV data, then run the model to create predictions. This process can take around 6-8 min. You can also choose our newer instance type such as “ml.m5.xlarge” for this deployment.
+
+![](https://user-images.githubusercontent.com/36265995/102501607-e9a61f00-407d-11eb-8c0d-aba4bfa220dc.png)
