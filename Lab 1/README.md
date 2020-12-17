@@ -166,10 +166,10 @@ We see several features that essentially have 100% correlation with one another.
 
 
 18. Now quickly check the S3 bucket through the console to make sure you have uploaded the train.csv and validation.csv
-
+--
+--
 ![](https://user-images.githubusercontent.com/36265995/102492673-50bdd680-4072-11eb-8b61-c467b6911b84.png)
-
-
+---
 ![](https://user-images.githubusercontent.com/36265995/102492689-574c4e00-4072-11eb-9638-cfdc09f2f3b3.png)
 
 
