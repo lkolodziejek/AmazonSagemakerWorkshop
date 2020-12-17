@@ -11,6 +11,7 @@ In this lab, you will assume the role of a machine learning developer. Your task
 
 - [_Data Preparation_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation)
 - [_Train & Tune the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#train--tune-the-model)
+- [ Host_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#host)
 
 
 # Data Preparation
@@ -201,6 +202,6 @@ In this step, you will train your machine learning model with the training datas
     `Managed Spot Training savings: 63.4%`
 
 
-# Host
+# Deploy the model
 
-
+In this step, you will deploy the trained model to a real-time HTTPS endpoint, reformat then load the CSV data, then run the model to create predictions. This process can take around 6-8 min. You can also choose our newer instance type such as “ml.m5.xlarge” for this deployment.
