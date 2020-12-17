@@ -12,7 +12,7 @@ In this lab, you will assume the role of a machine learning developer. Your task
 
 In this step you will use your Amazon SageMaker Studio notebook to preprocess the data that you need to train your machine learning model.
 
-1. File → New Terminal
+### 1. File → New Terminal
 2. Then clone the git repo using below command:
 
 `git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
