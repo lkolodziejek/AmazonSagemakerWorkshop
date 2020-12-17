@@ -37,4 +37,6 @@ This code will import some libraries in your Jupyter notebook environment:
 
 ![](https://user-images.githubusercontent.com/36265995/102478214-a20f9b00-405d-11eb-9e6c-6cb03d45c0d6.png)
 
+Now, Let’s download the dataset by running the next cell.
 
+![](https://user-images.githubusercontent.com/36265995/102478876-6d501380-405e-11eb-80d3-ab230da23d00.png)
