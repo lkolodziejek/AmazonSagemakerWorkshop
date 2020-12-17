@@ -12,13 +12,13 @@ In this lab, you will assume the role of a machine learning developer. Your task
 
 In this step you will use your Amazon SageMaker Studio notebook to preprocess the data that you need to train your machine learning model.
 
-#### 1. File → New Terminal
+1. File → New Terminal
 
-#### 2. Then clone the git repo using below command:
+2. Then clone the git repo using below command:
 
 `git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
 
-#### 3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
+3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
 
 
 
@@ -26,13 +26,13 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-#### 4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
+4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
 
 
  WSTAW TU ZDJECIE
 
 
-#### 5. Select the kernel for your notebook: “_Python 3(Data Science)_”
+5. Select the kernel for your notebook: “_Python 3(Data Science)_”
 
 
 
@@ -40,7 +40,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-#### 6. In the next cell you will load the dataset into a pandas dataframe
+6. In the next cell you will load the dataset into a pandas dataframe
 
 
 
@@ -48,7 +48,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-#### 7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
 
@@ -56,7 +56,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-#### 8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
 
 
 
@@ -76,7 +76,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-#### 9. In the next cell you will load the dataset into a pandas dataframe
+9. In the next cell you will load the dataset into a pandas dataframe
 
 
 
@@ -84,7 +84,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-#### 10. Now let’s explore the data and understand the data distribution for each feature:
+10. Now let’s explore the data and understand the data distribution for each feature:
 
 
 
@@ -96,7 +96,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-#### 11. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
+11. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
 
 
 
@@ -104,7 +104,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-#### 12. Next let's look at the relationship between each of the features and our target variable.
+12. Next let's look at the relationship between each of the features and our target variable.
 
 
 
@@ -122,8 +122,7 @@ Interestingly we see that churners appear:
 In addition, we see that churners take on very similar distributions for features like Day Mins and Day Charge. That's not surprising as we'd expect minutes spent talking to correlate with charges. Let's dig deeper into the relationships between our features.
 
 
-
-#### 13. Now let’s look at how our features relate to one another
+13. Now let’s look at how our features relate to one another
 
 
 
@@ -137,7 +136,7 @@ We see several features that essentially have 100% correlation with one another.
 
 
 
-#### 14. Let's remove one feature from each of the highly correlated pairs: Day Charge from the pair with Day Mins, Night Charge from the pair with Night Mins, Intl Charge from the pair with Intl Mins:
+14. Let's remove one feature from each of the highly correlated pairs: Day Charge from the pair with Day Mins, Night Charge from the pair with Night Mins, Intl Charge from the pair with Intl Mins:
 
 
 
@@ -172,3 +171,8 @@ We see several features that essentially have 100% correlation with one another.
 
 
 ![](https://user-images.githubusercontent.com/36265995/102492689-574c4e00-4072-11eb-9638-cfdc09f2f3b3.png)
+
+
+**Congratulations!!** You have successfully prepared the data to train an XGBoost model.
+
+# Train & Tune the model
