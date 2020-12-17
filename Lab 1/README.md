@@ -75,3 +75,23 @@ Now, Let’s download the dataset by running the next cell.
 ![](https://user-images.githubusercontent.com/36265995/102481237-bbb2e180-4061-11eb-8ff5-0ae68ca680d1.png)
 
 10. Next let's look at the relationship between each of the features and our target variable.
+
+
+![](https://user-images.githubusercontent.com/36265995/102482986-5f04f600-4064-11eb-9a2d-67f66af58243.png)
+
+
+Interestingly we see that churners appear:
+- Fairly evenly distributed geographically
+- More likely to have an international plan
+- Less likely to have a voicemail plan
+- To exhibit some bimodality in daily minutes (either higher or lower than the average for non-churners)
+- To have a larger number of customer service calls (which makes sense as we'd expect customers who experience lots of problems may be more likely to churn)
+
+In addition, we see that churners take on very similar distributions for features like Day Mins and Day Charge. That's not surprising as we'd expect minutes spent talking to correlate with charges. Let's dig deeper into the relationships between our features.
+
+
+11. Now let’s look at how our features relate to one another
+
+
+
+
