@@ -164,3 +164,11 @@ We see several features that essentially have 100% correlation with one another.
 
 
 ![](https://user-images.githubusercontent.com/36265995/102492092-6ed70700-4071-11eb-92ed-84204e4afa60.png)
+
+
+18. Now quickly check the S3 bucket through the console to make sure you have uploaded the train.csv and validation.csv
+
+![](https://user-images.githubusercontent.com/36265995/102492673-50bdd680-4072-11eb-8b61-c467b6911b84.png)
+
+
+![](https://user-images.githubusercontent.com/36265995/102492689-574c4e00-4072-11eb-9638-cfdc09f2f3b3.png)
