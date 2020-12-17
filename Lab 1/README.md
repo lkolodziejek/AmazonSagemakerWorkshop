@@ -13,33 +13,33 @@ In this lab, you will assume the role of a machine learning developer. Your task
 In this step you will use your Amazon SageMaker Studio notebook to preprocess the data that you need to train your machine learning model.
 
 ### 1. File → New Terminal
-2. Then clone the git repo using below command:
+### 2. Then clone the git repo using below command:
 
 `git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
 
-3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
+### 3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
 
 ![](https://user-images.githubusercontent.com/36265995/102468789-468be000-4052-11eb-9c06-039df000d2c7.png)
 
-4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
+### 4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
 #### WSTAW TU ZDJECIE
-5. Select the kernel for your notebook: “_Python 3(Data Science)_”
+### 5. Select the kernel for your notebook: “_Python 3(Data Science)_”
 
 ![](https://user-images.githubusercontent.com/36265995/102474260-b7ce9180-4058-11eb-8b0d-3c6c068803e7.png)
 
-6. In the next cell you will load the dataset into a pandas dataframe
+### 6. In the next cell you will load the dataset into a pandas dataframe
 
 
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
 
-5. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+### 7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
 
 
-6. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+### 8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
 
 
 This code will import some libraries in your Jupyter notebook environment:
