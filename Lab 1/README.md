@@ -33,29 +33,45 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 ![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
 
-
 5. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+
 
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
 
+
 6. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+
 
 This code will import some libraries in your Jupyter notebook environment:
 
+
 ![](https://user-images.githubusercontent.com/36265995/102478214-a20f9b00-405d-11eb-9e6c-6cb03d45c0d6.png)
+
 
 Now, Let’s download the dataset by running the next cell.
 
+
 ![](https://user-images.githubusercontent.com/36265995/102478876-6d501380-405e-11eb-80d3-ab230da23d00.png)
+
 
 7. In the next cell you will load the dataset into a pandas dataframe
 
-![ReadDataSet](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
+
+![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
+
 
 8. Now let’s explore the data and understand the data distribution for each feature:
 
+
 ![](https://user-images.githubusercontent.com/36265995/102480320-64f8d800-4060-11eb-86f1-230b873bc6b3.png)
+
 
 ![](https://user-images.githubusercontent.com/36265995/102480376-78a43e80-4060-11eb-8377-f5477668cca9.png)
 
 
+9. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
+
+
+![](https://user-images.githubusercontent.com/36265995/102481237-bbb2e180-4061-11eb-8ff5-0ae68ca680d1.png)
+
+10. 
