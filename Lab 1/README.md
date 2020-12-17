@@ -18,6 +18,8 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 `git clone https://github.com/aws-samples/amazon-sagemaker-immersion-day.git`
 
 3. After completion of step 2 you will have “_XXXXXXXXXXX_” folder created in “_left panel_” of the studio:
-
-
 #### WSTAW TU ZDJECIE
+4. In the left side panel choose XXXXXXXXXXXXX and open xgboost_customer_churn.ipynb
+#### WSTAW TU ZDJECIE
+
+
