@@ -47,3 +47,9 @@ This code will import some libraries in your Jupyter notebook environment:
 Now, Let’s download the dataset by running the next cell.
 
 ![](https://user-images.githubusercontent.com/36265995/102478876-6d501380-405e-11eb-80d3-ab230da23d00.png)
+
+7. In the next cell you will load the dataset into a pandas dataframe
+
+![ReadDataSet](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
+
+
