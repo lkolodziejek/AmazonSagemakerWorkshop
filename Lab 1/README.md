@@ -74,4 +74,4 @@ Now, Let’s download the dataset by running the next cell.
 
 ![](https://user-images.githubusercontent.com/36265995/102481237-bbb2e180-4061-11eb-8ff5-0ae68ca680d1.png)
 
-10. 
+10. Next let's look at the relationship between each of the features and our target variable.
