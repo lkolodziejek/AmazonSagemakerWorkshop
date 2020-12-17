@@ -145,7 +145,7 @@ We see several features that essentially have 100% correlation with one another.
 
 
 
-#### 15. Now we will convert all the categorical variables using one hot encoding
+15. Now we will convert all the categorical variables using one hot encoding
 
 
 
@@ -153,11 +153,14 @@ We see several features that essentially have 100% correlation with one another.
 
 
 
-#### 16. We will split our data set into 3 channels: train, test, validation set:
+16. We will split our data set into 3 channels: train, test, validation set:
 
 
 
 ![](https://user-images.githubusercontent.com/36265995/102485622-2830df00-4068-11eb-912a-2c010b48f9ce.png)
 
 
+17. Now we will upload the final data into Amazon S3 bucket.
 
+
+![](https://user-images.githubusercontent.com/36265995/102492092-6ed70700-4071-11eb-92ed-84204e4afa60.png)
