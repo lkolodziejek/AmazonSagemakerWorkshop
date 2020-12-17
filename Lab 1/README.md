@@ -203,7 +203,7 @@ In this step, you will train your machine learning model with the training datas
 
 # Deploy the model
 
-In this step, you will deploy the trained model to a real-time HTTPS endpoint. This process can take around 6-8 min.
+In this step, you will deploy the trained model to a real-time HTTPS endpoint. This process can take around 6-8 min.  
 **!!! If you can not use “_ml.m5.xlarge_” as you have limits and quatas on your AWS account please use “_ml.m5.large_”.**
 
 ![](https://user-images.githubusercontent.com/36265995/102501607-e9a61f00-407d-11eb-8c0d-aba4bfa220dc.png)
