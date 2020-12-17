@@ -191,3 +191,15 @@ In this step, you will train your machine learning model with the training datas
 3. Now, define the training parameter in SageMaker Estimator. You will also define the tuning hyperparameter and then call the “fit” method to train the model.
 
 ![](https://user-images.githubusercontent.com/36265995/102498294-10625680-407a-11eb-86c6-a8d90a07a332.png)
+
+4. During the training process you have used AWS Spot instances. Look on logs to see how many saving did you make.
+
+`2020-12-17 14:07:40 Uploading - Uploading generated training model`
+`2020-12-17 14:07:40 Completed - Training job completed`
+`Training seconds: 41`
+`Billable seconds: 15`
+`Managed Spot Training savings: 63.4%`
+
+# Host
+
+
