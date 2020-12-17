@@ -187,3 +187,7 @@ In this step, you will train your machine learning model with the training datas
 2. Specify train and validation data set location:
 
 ![](https://user-images.githubusercontent.com/36265995/102495608-9381ad80-4076-11eb-849a-3d5a1b620f90.png)
+
+3. Now, define the training parameter in SageMaker Estimator. You will also define the tuning hyperparameter and then call the “fit” method to train the model.
+
+![](https://user-images.githubusercontent.com/36265995/102498294-10625680-407a-11eb-86c6-a8d90a07a332.png)
