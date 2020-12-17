@@ -52,4 +52,10 @@ Now, Let’s download the dataset by running the next cell.
 
 ![ReadDataSet](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
 
+8. Now let’s explore the data and understand the data distribution for each feature:
+
+![](https://user-images.githubusercontent.com/36265995/102480320-64f8d800-4060-11eb-86f1-230b873bc6b3.png)
+
+![](https://user-images.githubusercontent.com/36265995/102480376-78a43e80-4060-11eb-8377-f5477668cca9.png)
+
 
