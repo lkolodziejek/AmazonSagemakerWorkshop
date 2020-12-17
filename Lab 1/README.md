@@ -204,7 +204,7 @@ In this step, you will train your machine learning model with the training datas
 
 ![](https://user-images.githubusercontent.com/36265995/102504660-64246e00-4081-11eb-9baf-8e07d2250144.png)
 
-**Now.** You successfully trained XGBoost model!!
+**Congratulations!!** You successfully trained XGBoost model!!
 
 # Deploy the model
 
