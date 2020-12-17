@@ -8,6 +8,11 @@ Taking ML models from concept to production is typically complex and time-consum
 
 In this lab, you will assume the role of a machine learning developer. Your task is to identify unhappy customers early on to have a chance to offer them incentives to stay. Losing customers is costly for any business. You will use notebook `xgboost_customer_churn.ipynb` that describes how to use machine learning (ML) for the automated identification of unhappy customers, also known as customer churn prediction. ML models rarely give perfect predictions though, so this notebook is also about how to incorporate the relative costs of prediction mistakes when determining the financial outcome of using ML.
 
+
+- [Data Preparation](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation)
+- [Train & Tune the model]()
+
+
 # Data Preparation
 
 In this step you will use your Amazon SageMaker Studio notebook to preprocess the data that you need to train your machine learning model.
