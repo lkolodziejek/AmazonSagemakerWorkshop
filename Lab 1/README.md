@@ -194,7 +194,7 @@ In this step, you will train your machine learning model with the training datas
 ![](https://user-images.githubusercontent.com/36265995/102498294-10625680-407a-11eb-86c6-a8d90a07a332.png)
 
 4. During the training process you have used AWS Spot instances. Look on logs to see how many saving did you make compareing to onDemand Instances.
-
+-- 
 > Training seconds: 41    
 > Billable seconds: 15
 > Managed Spot Training savings: 63.4%
