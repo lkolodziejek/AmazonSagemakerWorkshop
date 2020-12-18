@@ -341,7 +341,7 @@ Confirm that:
 
 ![](https://user-images.githubusercontent.com/36265995/102663275-c748fa00-4180-11eb-962b-a219e9e7d467.png)
 
-19. Once again select “_Object_” tab and click “_Upload_” button. Next select “_Add files_”
+19. Once again select “_Objects_” tab and click “_Upload_” button. Next select “_Add files_”
 
 Upload file `xgboost-customerchurn-website.html` file and leave all parameters with default values.
 
@@ -350,5 +350,6 @@ Upload file `xgboost-customerchurn-website.html` file and leave all parameters w
 Finally click Upload:
 
 
+18. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actionsn_” button and select “_Make public_” option:
 
-18. Once again select “_Object_” tab and and and `xgboost-customerchurn-website` to the bucket. Leave all parameters as default.
+![](https://user-images.githubusercontent.com/36265995/102664348-d630ac00-4182-11eb-831b-e095ccdef1b7.png)
