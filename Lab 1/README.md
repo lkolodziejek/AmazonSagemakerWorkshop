@@ -233,7 +233,7 @@ In this step, you will inference the trained model throught simple web page that
 
 ![](https://user-images.githubusercontent.com/36265995/102612322-cee0b280-4130-11eb-9557-b58c668c86d6.png)
 
-3. Select “_Create policy_”. The policy cretor will open in new tab. Switch to JSON tab paste the following policy:
+3. Select “_Create policy_”. The policy creator will open in new tab. Switch to JSON tab paste the following policy:
 
 ```
 {  
@@ -248,3 +248,4 @@ In this step, you will inference the trained model throught simple web page that
     ]  
 }  
 ```
+![](https://user-images.githubusercontent.com/36265995/102613161-4bc05c00-4132-11eb-8cfd-5f46083fe783.png)
