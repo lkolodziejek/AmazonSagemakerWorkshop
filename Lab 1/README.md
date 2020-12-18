@@ -329,14 +329,14 @@ Please open Amazon S3 service dashbord and go the bucket you have created:
 
 17. Select “_Permissions_” tab and then “_Edit_” button in “_Block public access (bucket settings)_” section:
 
-![](https://user-images.githubusercontent.com/36265995/102661910-06c21700-417e-11eb-80aa-34e70882fb08.png)
-
-And confirm.
-
 ![](https://user-images.githubusercontent.com/36265995/102662312-e34b9c00-417e-11eb-8a42-1dbc1273e735.png)
 
 18. Unmark “_Block all public access_” and click “_Save changes_”
 
 ![](https://user-images.githubusercontent.com/36265995/102662066-5d2f5580-417e-11eb-9c56-f6c8b77370a8.png)
+
+
+
+And confirm.
 
 18. Select “_Upload_” and and `xgboost-customerchurn-website` to the bucket. Leave all parameters as default.
