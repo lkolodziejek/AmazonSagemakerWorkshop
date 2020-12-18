@@ -311,4 +311,12 @@ Also the new section “_API Gateway_” has appeard. Expand the “_Details_”
 
 ![](https://user-images.githubusercontent.com/36265995/102635755-0ca30280-4154-11eb-9396-6ae239d355a7.png)
 
+15. Finally we can create our simple web page to have more user friendy interface to inference our ML model.
 
+We star with the the file `xgboost-customerchurn-website.html`. This is very simple html file that creates simple form with the input for vector of features that ML model required. Please open the html source code. In 8th line `endpoint` variable is defined. Use https endpoint address that we copied in previous step and assign it to this variable.
+
+![](https://user-images.githubusercontent.com/36265995/102639353-39a5e400-4159-11eb-937e-07953cf21145.png)
+
+16. Now it is time to set up and deploy our web page.
+
+We will use Amazon S3 service to host web page. To do this we need to create a S3 bucket and configure it as a 
