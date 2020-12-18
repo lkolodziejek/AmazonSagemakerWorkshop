@@ -274,7 +274,7 @@ This policy will allow a lambda function to make inferance on the model we have 
 
 ![](https://user-images.githubusercontent.com/36265995/102625458-d199d280-4145-11eb-96a4-638fb7756a18.png)
 
-10. Now, copy the content of the `xgboost-customerchurn-ep-invoker-lambda.py` file in code editor.
+10. Now, copy the content of the `xgboost-customerchurn-ep-invoker-lambda.py` file into lambda code editor.
 
 In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
 
@@ -288,3 +288,6 @@ In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name
 
 ![](https://user-images.githubusercontent.com/36265995/102629134-06f4ef00-414b-11eb-8dea-153156b1e5c2.png)
 
+13. You are now ready do deploy your function. Scroll up to the top of lambda code editor. In the top right corner select “_Deploy_”
+
+![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
