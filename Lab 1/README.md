@@ -329,7 +329,7 @@ Please open Amazon S3 service dashbord and go the bucket you have created:
 
 17. Select “_Permissions_” tab and then “_Edit_” button in “_Block public access (bucket settings)_” section:
 
-
+![](https://user-images.githubusercontent.com/36265995/102663047-573a7400-4180-11eb-8837-c01e23ca573a.png)
 
 18. Unmark “_Block all public access_” and click “_Save changes_”
 
