@@ -358,8 +358,8 @@ Finally click Upload:
 
 ![](https://user-images.githubusercontent.com/36265995/102664936-23f9e400-4184-11eb-86fe-704026733d49.png)
 
-22. Finally! We are all set up. You web page is up and running. Try to get the prediction for example vector of features.
+22. Finally!! We are all set up and ready. Your web page is up and running. Try to get the prediction for example vector of features.
 
 ![](https://user-images.githubusercontent.com/36265995/102665148-94a10080-4184-11eb-81e9-f5bb0ed1e8e4.png)
 
-
+**Congratulations!!** You successfully completed this lab!!
