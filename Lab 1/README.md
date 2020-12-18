@@ -323,20 +323,20 @@ We will use Amazon S3 service to host our web page. To keep this it as simple as
 
 ![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
 
-Please open Amazon S3 service dashbord and go the bucket you have created.
+Please open Amazon S3 service dashbord and go the bucket you have created:
 
 ![](https://user-images.githubusercontent.com/36265995/102661586-6b30a680-417d-11eb-9358-9fb4c54b8bec.png)
 
-17. Select “_Permissions_” tab and then “_Edit_” button in “_Block public access (bucket settings)_”:
+17. Select “_Permissions_” tab and then “_Edit_” button in “_Block public access (bucket settings)_” section:
 
 ![](https://user-images.githubusercontent.com/36265995/102661910-06c21700-417e-11eb-80aa-34e70882fb08.png)
 
-You have to confirm that by writing `confirm` and clicking “_Confirm_”.
+And confirm.
 
-![confirm](https://user-images.githubusercontent.com/36265995/102662312-e34b9c00-417e-11eb-8a42-1dbc1273e735.png)
+![](https://user-images.githubusercontent.com/36265995/102662312-e34b9c00-417e-11eb-8a42-1dbc1273e735.png)
 
 18. Unmark “_Block all public access_” and click “_Save changes_”
 
 ![](https://user-images.githubusercontent.com/36265995/102662066-5d2f5580-417e-11eb-9c56-f6c8b77370a8.png)
 
-19. Select “_Upload_” and and `xgboost-customerchurn-website` to the bucket. Leave all parameters as default.
+18. Select “_Upload_” and and `xgboost-customerchurn-website` to the bucket. Leave all parameters as default.
