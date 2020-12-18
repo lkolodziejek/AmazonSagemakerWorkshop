@@ -276,7 +276,15 @@ This policy will allow a lambda function to make inferance on the model we have 
 
 10. Now, copy the content of the `xgboost-customerchurn-ep-invoker-lambda.py` file in code editor.
 
-In the line 8 `ENDPOINT NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model.
+In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
 
 ![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
+
+11. While we have identified the name of the Amazon Sagemaker endpoint that we created we need to configure environment variable `ENDPOINT_NAME`. Scroll down the AWS Lambda page to find “_Environment variables_”. Click “_Edit_”.
+
+![](https://user-images.githubusercontent.com/36265995/102628639-4b33bf80-414a-11eb-9a80-f3ee942a69af.png)
+
+12. Select “_Add environment variable_”. Provide Key `ENDPOINT_NAME` and the value that you identified in step 10. Please keep in mind that your value will be differnet then value presented here. Click “_Save_”
+
+![](https://user-images.githubusercontent.com/36265995/102629134-06f4ef00-414b-11eb-8dea-153156b1e5c2.png)
 
