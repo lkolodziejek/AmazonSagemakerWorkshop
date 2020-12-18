@@ -319,4 +319,10 @@ We star with the the file `xgboost-customerchurn-website.html`. This is very sim
 
 16. Now it is time to set up and deploy our web page.
 
-We will use Amazon S3 service to host web page. To do this we need to create a S3 bucket and configure it as a 
+We will use Amazon S3 service to host our web page. To do this we will reuse a S3 bucket that we have created at the very begining of this lab. We have created it within notebook `xgboost_customer_churn.ipynb` like this:
+
+![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
+
+Please open Amazon S3 service dashbord and open the bucket you typed in `xgboost_customer_churn.ipynb` script.
+
+17. Select “_Upload_” and and `xgboost-customerchurn-website` to the bucket. Leave all parameters as default.
