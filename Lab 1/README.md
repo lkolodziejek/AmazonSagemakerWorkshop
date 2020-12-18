@@ -219,3 +219,32 @@ Now we will check AWS console view as well
 ![](https://user-images.githubusercontent.com/36265995/102505442-473c6a80-4082-11eb-9f55-2e521b40168a.png)
 
 **Congratulations!!** You successfully deployed XGBoost model!!
+
+# Inference the model with simple web page
+
+In this step, you will inference the trained model throught simple web page that you will create.
+
+1. At first open IAM service and go to Roles dashborad to create new role for lambda service.
+
+
+![](https://user-images.githubusercontent.com/36265995/102611401-20883d80-412f-11eb-8a5c-f9da0a8d551b.png)
+
+2. Select “_Create role_” and check Lamda service in “_Choose a use case_” section. Next, select “_Next: Permissions_” button.
+
+![](https://user-images.githubusercontent.com/36265995/102612322-cee0b280-4130-11eb-9557-b58c668c86d6.png)
+
+3. Select “_Create policy_”. The policy cretor will open in new tab. Switch to JSON tab paste the following policy:
+
+```
+{  
+    "Version": "2012-10-17",  
+    "Statement": [  
+        {  
+            "Sid": "VisualEditor0",  
+            "Effect": "Allow",  
+            "Action": "sagemaker:InvokeEndpoint",  
+            "Resource": "*"  
+        }  
+    ]  
+}  
+```
