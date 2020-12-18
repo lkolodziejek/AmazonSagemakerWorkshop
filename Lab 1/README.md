@@ -273,3 +273,10 @@ This policy will allow a lambda function to make inferance on the model we have 
 9. Provide a name for your lambda functiony and select **_Python 3.7_** as runtime. Next, expand “_Change default execution role_” in “_Permissions_” section. Select “_Use an existing role_” and select the role you created few steps earlier. Finally select “_Create function_”
 
 ![](https://user-images.githubusercontent.com/36265995/102625458-d199d280-4145-11eb-96a4-638fb7756a18.png)
+
+10. Now, copy the content of the `xgboost-customerchurn-ep-invoker-lambda.py` file in code editor.
+
+In the line 8 `ENDPOINT NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model.
+
+![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
+
