@@ -301,3 +301,13 @@ Scroll up to the top of the page. Here you will find graphical designer that mak
 14. Please fill “_Trigger configuration_” page as follow, than select “_Add_”
 
 ![](https://user-images.githubusercontent.com/36265995/102634407-14fa3e00-4152-11eb-8f79-903362c55035.png)
+
+The “_Designer_” section now looks like this:
+
+![](https://user-images.githubusercontent.com/36265995/102635048-082a1a00-4153-11eb-86de-b126b7a2a9b9.png)
+
+Also the new section “_API Gateway_” has appeard. Expand the “_Details_” arrow to get the https endpoint address where your lambda function will be exposed. Please keep in mind that your https address will be diferent. Copy the address as we will need it while creating our web page.
+
+![](https://user-images.githubusercontent.com/36265995/102635755-0ca30280-4154-11eb-9396-6ae239d355a7.png)
+
+
