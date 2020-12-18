@@ -350,6 +350,16 @@ Upload file `xgboost-customerchurn-website.html` file and leave all parameters w
 Finally click Upload:
 
 
-18. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actions_” button and select “_Make public_” option:
+20. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actions_” button and select “_Make public_” option:
 
 ![](https://user-images.githubusercontent.com/36265995/102664348-d630ac00-4182-11eb-831b-e095ccdef1b7.png)
+
+21. Click on the file link `xgboost-customerchurn-website.html`. You will be redirected to the object details page, In “_Object Overview_” section find “_Object URL_” and select it:
+
+![](https://user-images.githubusercontent.com/36265995/102664936-23f9e400-4184-11eb-86fe-704026733d49.png)
+
+22. Finally! We are all set up. You web page is up and running. Try to get the prediction for example vector of features.
+
+![](https://user-images.githubusercontent.com/36265995/102665148-94a10080-4184-11eb-81e9-f5bb0ed1e8e4.png)
+
+
