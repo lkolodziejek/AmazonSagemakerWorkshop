@@ -35,4 +35,4 @@ Here are the one-time steps for onboarding to Amazon SageMaker Studio using Quic
 
 ![](https://user-images.githubusercontent.com/36265995/102408346-b87e0e00-3fed-11eb-826f-dcdfde0f7b26.png)
 
-### **Congratulations!!** You have successfully created SageMaker Studio instance and launched the Notebook.
+**Congratulations!!** You have successfully created SageMaker Studio instance and launched the Notebook.
