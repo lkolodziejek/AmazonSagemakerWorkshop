@@ -266,4 +266,10 @@ This policy will allow a lambda function to make inferance on the model we have 
 
 7. Select “_Create role_”.
 
-8. As we have just created a role now we can set up a lambda function that will hande the request from web page and pass it to the ML model we are hosting in
+8. As we have just created a role, now we can set up a lambda function that will handle the request from web page and pass it to the ML model hosted on Amazon SageMaker. Go to AWS Lambda Service dashboard and select “_Create function_”
+
+![](https://user-images.githubusercontent.com/36265995/102624271-0efd6080-4144-11eb-9e0b-f68db1dc84c1.png)
+
+9. Provide a name for your lambda functiony and select **_Python 3.7_** as runtime. Next, expand “_Change default execution role_” in “_Permissions_” section. Select “_Use an existing role_” and select the role you created few steps earlier. Finally select “_Create function_”
+
+![](https://user-images.githubusercontent.com/36265995/102625458-d199d280-4145-11eb-96a4-638fb7756a18.png)
