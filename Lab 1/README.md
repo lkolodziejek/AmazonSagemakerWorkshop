@@ -350,6 +350,6 @@ Upload file `xgboost-customerchurn-website.html` file and leave all parameters w
 Finally click Upload:
 
 
-18. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actionsn_” button and select “_Make public_” option:
+18. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actions_” button and select “_Make public_” option:
 
 ![](https://user-images.githubusercontent.com/36265995/102664348-d630ac00-4182-11eb-831b-e095ccdef1b7.png)
