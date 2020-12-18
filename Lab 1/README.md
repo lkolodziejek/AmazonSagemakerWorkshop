@@ -291,3 +291,13 @@ In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name
 13. You are now ready do deploy your function. Scroll up to the top of lambda code editor. In the top right corner select “_Deploy_”
 
 ![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
+
+14. It is time to share our lambda function with others. To do this we will use Amazon API Gateway.
+
+Scroll up to the top of the page. Here you will find graphical designer that makes it easier to add lambda triggers and destinations. Click on “_+ Add trigger_” icon. This will open “_Trigger configuration_” page.
+
+![](https://user-images.githubusercontent.com/36265995/102633979-7a016400-4151-11eb-97b7-178a94267b54.png)
+
+14. Please fill “_Trigger configuration_” page as follow, than select “_Add_”
+
+![](https://user-images.githubusercontent.com/36265995/102634407-14fa3e00-4152-11eb-8f79-903362c55035.png)
