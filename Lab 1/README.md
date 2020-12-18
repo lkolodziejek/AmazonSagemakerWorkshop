@@ -265,3 +265,5 @@ This policy will allow a lambda function to make inferance on the model we have 
 ![](https://user-images.githubusercontent.com/36265995/102614685-f5a0e800-4134-11eb-97ab-434ce317c1aa.png)
 
 7. Select “_Create role_”.
+
+8. As we have just created a role now we can set up a lambda function that will hande the request from web page and pass it to the ML model we are hosting in
