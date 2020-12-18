@@ -248,4 +248,20 @@ In this step, you will inference the trained model throught simple web page that
     ]  
 }  
 ```
+This policy will allow a lambda function to make inferance on the model we have created and deployed in Amazon SageMaker.
+
 ![](https://user-images.githubusercontent.com/36265995/102613161-4bc05c00-4132-11eb-8cfd-5f46083fe783.png)
+
+4. Select “_Review policy_” and provide name and describtion for it.
+
+![](https://user-images.githubusercontent.com/36265995/102613984-b756f900-4133-11eb-83f1-5e23895a27da.png)
+
+5. Select “_Create policy_” and go back to “_Create role_” tab you have been on. Search you policy and mark it.
+
+![](https://user-images.githubusercontent.com/36265995/102614420-7c08fa00-4134-11eb-9100-6834bcf7b1ac.png)
+
+6. Select “_Next: Tags_”, “_Next: Review_” and provide name for the role.
+
+![](https://user-images.githubusercontent.com/36265995/102614685-f5a0e800-4134-11eb-97ab-434ce317c1aa.png)
+
+7. Select “_Create role_”.
