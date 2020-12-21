@@ -7,6 +7,12 @@ Losing customers is costly for any business. Identifying unhappy customers early
 
 # Setup
 
-1. We will start with opening Notebook `autopilot_customer_churn.ipynb`. We will skip detailed instruction how to procees as you are the expert now.
-
-In case You did follow this workshi in order, you can find detailed instruction how to complete this step [_“here”_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
+1. We will start with opening Notebook `autopilot_customer_churn.ipynb`. We will skip detailed instruction how to procees as you are the expert now.  
+  
+    
+In case You did not follow this workshi in order, you can find detailed instruction how to complete this step [_“here”_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).  
+  
+  
+2. In the very first two cells we will start with specifying:  
+  
+  - The S3 bucket and prefix that you want to use for training and model data. Replace the appropriate variable names according to your preferences.
