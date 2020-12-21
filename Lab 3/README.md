@@ -7,5 +7,5 @@ Losing customers is costly for any business. Identifying unhappy customers early
 
 # Setup
 
-1. We will start with opening Nootebook `autopilot_customer_churn.ipynb`. We will skip detailed instruction how to procees as you are the expert now.
+1. We will start with opening Notebook `autopilot_customer_churn.ipynb`. We will skip detailed instruction how to procees as you are the expert now.
 
