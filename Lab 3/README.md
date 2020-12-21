@@ -9,3 +9,4 @@ Losing customers is costly for any business. Identifying unhappy customers early
 
 1. We will start with opening Notebook `autopilot_customer_churn.ipynb`. We will skip detailed instruction how to procees as you are the expert now.
 
+In case You did follow this workshi in order, you can find detailed instruction how to complete this step [_“here”_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
