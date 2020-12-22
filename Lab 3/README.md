@@ -2,7 +2,7 @@
 
 In this lab, you will get hands-on with Amazon Sagemaker AutoML. An automated machine learning (commonly referred to as AutoML) solution for tabular datasets. You can use SageMaker Autopilot in different ways: on autopilo (hence the name) or with human guidance, without code through SageMaker Studio, or using the AWS SDKs.
 
-Losing customers is costly for any business. Identifying unhappy customers early on gives you a chance to offer them incentives to stay. This lab describes using machine learning (ML) for the automated identification of unhappy customers, also known as customer churn prediction. We will use the same data set as we did in **Lab 1** as we are already familiar with it.  
+Losing customers is costly for any business. Identifying unhappy customers early on gives you a chance to offer them incentives to stay. This lab describes using machine learning (ML) for the automated identification of unhappy customers, also known as customer churn prediction. We will use the same data set as we did in **_Lab 1_** as we are already familiar with it.  
 
 
 # Setup
@@ -28,3 +28,10 @@ In case You did not follow this workshi in order, you can find detailed instruct
   
 
 # Data
+
+In this section we will dowload the data set. We are going to use the same data set as we did in **_Lab 1_** as we are already familiar with it. Just to briefly recap the dataset we use is publicly available and was mentioned in the book [Discovering Knowledge in Data](https://www.amazon.com/dp/0470908742/) by Daniel T. Larose. It is attributed by the author to the University of California Irvine Repository of Machine Learning Datasets.
+
+3. Let's download that dataset in now:  
+  
+  
+  ![Download](https://user-images.githubusercontent.com/36265995/102876391-67cf4080-4445-11eb-9c9a-fb353ec878d1.png)
