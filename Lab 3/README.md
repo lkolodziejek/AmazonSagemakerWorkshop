@@ -7,10 +7,11 @@ Losing customers is costly for any business. Identifying unhappy customers early
 
 # Setup
 
-1. We will start with opening Notebook `autopilot_customer_churn.ipynb`. We will skip detailed instruction how to procees as you are the expert now.  
+1. We will start with opening Notebook `autopilot_customer_churn.ipynb` in “AmazonSagemakerWorkshop/Lab 3” folder. We will skip detailed instruction how to procees as you are the expert now.  
   
+  **Zdjęcie tutaj, jak wygląda katalog Lab 3!**
     
-In case You did not follow this workshi in order, you can find detailed instruction how to complete this step [_“here”_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).  
+In case You did not follow this workshi in order, you can find detailed instruction how to complete this step [_“here”_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
   
   
 2. In the very first two cells we will start with specifying:  
@@ -18,4 +19,12 @@ In case You did not follow this workshi in order, you can find detailed instruct
   - The S3 bucket and prefix that you want to use for training and model data. Replace the appropriate variable names according to your preferences.  
    
   
-![ReplaceMe](https://user-images.githubusercontent.com/36265995/102872824-926aca80-4440-11eb-8998-00b87665ceb3.png)
+![ReplaceMe](https://user-images.githubusercontent.com/36265995/102872824-926aca80-4440-11eb-8998-00b87665ceb3.png)  
+  
+  
+  - Next, we'll import the Python libraries we'll need for the remainder of the exercise. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells.  
+  
+  ![Import](https://user-images.githubusercontent.com/36265995/102874970-7caad480-4443-11eb-8c62-c6a9de42db1c.png)  
+  
+
+# Data
