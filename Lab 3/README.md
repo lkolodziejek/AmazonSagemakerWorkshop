@@ -93,3 +93,7 @@ Always remember that you have the option to limit the running time of a Amazon S
   
 
 # Launching the Amazon Sagemaker Autopilot Job
+
+Finally we can now launch the Autopilot job by calling the `create_auto_ml_job` API. We limit the number of candidates to 20 so that the job finishes in a few minutes.
+
+![RunAutoPilot](https://user-images.githubusercontent.com/36265995/102891396-65c5ab80-445e-11eb-8cf8-e19668c1978a.png)
