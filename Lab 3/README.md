@@ -60,8 +60,10 @@ It shouldn't be a surprise that we end up with the same output as we did in **_L
 ![Split](https://user-images.githubusercontent.com/36265995/102880525-be3f7d80-444b-11eb-872f-ba86a28060e7.png)
   
   
+6. Now we'll upload these files to S3.  
   
-
+  
+![SaveToS3](https://user-images.githubusercontent.com/36265995/102887161-b76a3800-4456-11eb-9dd7-89d285657620.png)
 
 
 
