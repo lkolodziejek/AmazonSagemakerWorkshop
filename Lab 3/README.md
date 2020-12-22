@@ -50,7 +50,7 @@ In this section we will dowload the data set. We are going to use the same data 
 
 It is important to keep in mind that it is good practice to check the dataset to make sure that it has no obvious errors. The Autopilot process can take long time to complete, to inspect the dataset before you start a job.   
 
-[LoadData](https://user-images.githubusercontent.com/36265995/102878913-496b4400-4449-11eb-8bff-5a0a844a733a.png)
+![LoadData](https://user-images.githubusercontent.com/36265995/102878913-496b4400-4449-11eb-8bff-5a0a844a733a.png)
 
 It shouldn't be a surprise that we end up with the same output as we did in **_Lab 1_**. We will skip the where we analyze the data set. We want Amazon Sagemaker Autopilot to inspect our data set, and runs a number of model candidates to figure out the optimal combination of data preprocessing steps. Still we need to divide the data into training and testing splits.
 
