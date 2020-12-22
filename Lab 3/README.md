@@ -10,6 +10,7 @@ In this lab SageMaker Autopilot first inspects your data set, and runs a number 
   
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setup)
 - [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#data)
+- [_Setting up the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setting-up-the-amazon-sagemaker-autopilot-job)
 
   
 **Ok, lest start the lab!!**
@@ -88,7 +89,7 @@ Please keep in mind that it is also possible to specify the type of ML problem y
 As you remember the target attribute in our data set is: `Churn?`. As it consists of only binary values our model will be performing binary prediction, also known as binary classification.
 
 
-Always remember that you have the option to limit the running time of a Amazon SageMaker Autopilot job. To achieve such behavior providing either the maximum number of pipeline evaluations or candidates (one pipeline evaluation is called a Candidate because it generates a candidate model) or providing the total time allocated for the overall Autopilot job. Under default settings, this job takes about four hours to run. This varies between runs because of the nature of the exploratory process Autopilot uses to find optimal training parameters.
+Always remember that you have the option to limit the running time of a Amazon SageMaker Autopilot job. To achieve such behavior providing either the maximum number of pipeline evaluations or candidates (one pipeline evaluation is called a Candidate because it generates a candidate model) or providing the total time allocated for the overall Autopilot job. Under default settings, this job takes about four hours to run. This varies between runs because of the nature of the exploratory process Autopilot uses to find optimal training parameters.  
+  
 
-
-
+# Launching the Amazon Sagemaker Autopilot Job
