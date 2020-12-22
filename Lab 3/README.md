@@ -40,13 +40,13 @@ In case You did not follow this workshi in order, you can find detailed instruct
 
 In this section we will dowload the data set. We are going to use the same data set as we did in **_Lab 1_** as we are already familiar with it. Just to briefly recap the dataset we use is publicly available and was mentioned in the book [Discovering Knowledge in Data](https://www.amazon.com/dp/0470908742/) by Daniel T. Larose. It is attributed by the author to the University of California Irvine Repository of Machine Learning Datasets.
 
-3. Let's download that dataset now:  
+1. Let's download that dataset now:  
   
   
 ![Download](https://user-images.githubusercontent.com/36265995/102876391-67cf4080-4445-11eb-9c9a-fb353ec878d1.png)
 
 
-4. Read the data into a Pandas data frame and take a look
+2. Read the data into a Pandas data frame and take a look
 
 It is important to keep in mind that it is good practice to check the dataset to make sure that it has no obvious errors. The Autopilot process can take long time to complete, to inspect the dataset before you start a job.   
 
@@ -54,17 +54,33 @@ It is important to keep in mind that it is good practice to check the dataset to
 
 It shouldn't be a surprise that we end up with the same output as we did in **_Lab 1_**. We will skip the where we analyze the data set. We want Amazon Sagemaker Autopilot to inspect our data set, and runs a number of model candidates to figure out the optimal combination of data preprocessing steps. Still we need to divide the data into training and testing splits.
 
-5. Divide the data into training and testing splits.  
+3. Divide the data into training and testing splits.  
   
   
 ![Split](https://user-images.githubusercontent.com/36265995/102880525-be3f7d80-444b-11eb-872f-ba86a28060e7.png)
   
   
-6. Now we'll upload these files to S3.  
+4. Now we'll upload these files to S3.  
   
   
 ![SaveToS3](https://user-images.githubusercontent.com/36265995/102887161-b76a3800-4456-11eb-9dd7-89d285657620.png)
 
+# Setting up the Amazon Sagemaker Autopilot Job
+
+After uploading the dataset to Amazon S3, you can invoke Autopilot to find the best ML pipeline to train a model on this dataset.
+
+The required inputs for invoking a Autopilot job are:
+
+- Amazon S3 location for input dataset and for all output artifacts
+- Name of the column of the dataset you want to predict (Churn? in this case)
+- An IAM role
+
+Currently Autopilot supports only tabular datasets in CSV format. Either all files should have a header row, or the first file of the dataset, when sorted in alphabetical/lexical order by name, is expected to have a header row.
+
+1. Amazon S3 location for input dataset and for all output artifacts  
+  
+  
+![Config](https://user-images.githubusercontent.com/36265995/102888564-5a23b600-4459-11eb-8c0a-511dde7be70b.png)
 
 
 
