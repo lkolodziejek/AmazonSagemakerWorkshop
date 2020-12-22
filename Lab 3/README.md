@@ -77,11 +77,18 @@ The required inputs for invoking a Autopilot job are:
 
 Currently Autopilot supports only tabular datasets in CSV format. Either all files should have a header row, or the first file of the dataset, when sorted in alphabetical/lexical order by name, is expected to have a header row.
 
-1. Amazon S3 location for input dataset and for all output artifacts  
+Below you can find Amazon S3 location configuration for input dataset and for all output artifacts:  
   
   
 ![Config](https://user-images.githubusercontent.com/36265995/102888564-5a23b600-4459-11eb-8c0a-511dde7be70b.png)
 
+
+Please keep in mind that it is also possible to specify the type of ML problem you want to solve with your dataset (Regression, MulticlassClassification, BinaryClassification). Let's assume that we are not sure. We will allow Amazon Sagemaker Autopilot to infer the problem type based on statistics of the target column (the column we want to predict).
+
+As you remember the target attribute in our data set is: `Churn?`. As it consists of only binary values our model will be performing binary prediction, also known as binary classification.
+
+
+Always remember that you have the option to limit the running time of a Amazon SageMaker Autopilot job. To achieve such behavior providing either the maximum number of pipeline evaluations or candidates (one pipeline evaluation is called a Candidate because it generates a candidate model) or providing the total time allocated for the overall Autopilot job. Under default settings, this job takes about four hours to run. This varies between runs because of the nature of the exploratory process Autopilot uses to find optimal training parameters.
 
 
 
