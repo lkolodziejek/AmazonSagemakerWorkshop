@@ -106,3 +106,9 @@ The Amazon Sagemaker Autopilot job that we have just started will process throug
 
 With the following code you can monitor the progrss of the Autopilot job:
 ![Output](https://user-images.githubusercontent.com/36265995/102900651-e390b380-446c-11eb-952b-6d4c0777f834.png)
+
+# Analysis of output artifacts
+
+In this part of the lab we will analyze what the Amazon Sagemaker Autopilot did in the background. Let's start with login to AWS Management Console and opening Amazon SageMaker service dashboard.
+
+1. Open 
