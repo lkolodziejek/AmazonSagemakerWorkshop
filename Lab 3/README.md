@@ -97,3 +97,10 @@ Always remember that you have the option to limit the running time of a Amazon S
 Finally we can now launch the Autopilot job by calling the `create_auto_ml_job` API. We limit the number of candidates to 20 so that the job finishes in a few minutes.
 
 ![RunAutoPilot](https://user-images.githubusercontent.com/36265995/102891396-65c5ab80-445e-11eb-8cf8-e19668c1978a.png)
+
+The Amazon Sagemaker Autopilot job that we have just started will process through the 3 following steps:
+ 
+- **_Analyzing Data_**, where the dataset is analyzed and Autopilot comes up with a list of ML pipelines that should be tried out on the dataset. The dataset is also split into train and validation sets.
+- **_Feature Engineering_**, where Autopilot performs feature transformation on individual features of the dataset as well as at an aggregate level.
+- **_Model Tuning_**, where the top performing pipeline is selected along with the optimal hyperparameters for the training algorithm (the last stage of the pipeline). 
+
