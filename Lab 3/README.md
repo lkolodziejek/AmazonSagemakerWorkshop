@@ -104,3 +104,4 @@ The Amazon Sagemaker Autopilot job that we have just started will process throug
 - **_Feature Engineering_**, where Autopilot performs feature transformation on individual features of the dataset as well as at an aggregate level.
 - **_Model Tuning_**, where the top performing pipeline is selected along with the optimal hyperparameters for the training algorithm (the last stage of the pipeline). 
 
+With the following code you can monitor the progrss of the Autopilot jon
