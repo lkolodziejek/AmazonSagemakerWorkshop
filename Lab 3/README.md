@@ -15,4 +15,7 @@ In case You did not follow this workshi in order, you can find detailed instruct
   
 2. In the very first two cells we will start with specifying:  
   
-  - The S3 bucket and prefix that you want to use for training and model data. Replace the appropriate variable names according to your preferences.
+  - The S3 bucket and prefix that you want to use for training and model data. Replace the appropriate variable names according to your preferences.  
+   
+  
+![ReplaceMe](https://user-images.githubusercontent.com/36265995/102872824-926aca80-4440-11eb-8998-00b87665ceb3.png)
