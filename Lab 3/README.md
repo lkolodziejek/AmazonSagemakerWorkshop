@@ -154,6 +154,6 @@ Take a look what was generated inside this folder. Next we will look at trainabl
 
 Amazon Sagemaker Autopilot decided that all this **10** data transformers will fit best here.
 
-Autopilot generated one more very usefull notebook that will guide you throught the pipilines/canidtes/modules that were created at this step. You can download `SageMakerAutopilotDataExplorationNotebook.ipynb` here:  
+**!! Autopilot generated one more very useful notebook that will guide you through the pipelines/candidates/modules that were created at this step**. You can download `SageMakerAutopilotDataExplorationNotebook.ipynb` here:  
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
