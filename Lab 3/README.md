@@ -118,7 +118,7 @@ Let's start with login to AWS Management Console and opening Amazon SageMaker se
 
 ## “Analyzing Data” pipeline stage
 
-1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix “***db-***” and the second with prefix “***pr-***”.  
+1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First one with prefix "***db-***" and the second one with prefix "***pr-***".  
   
   
 If you have more than 2 jobs please refer to “_Creation time_” column to find your jobs. 
@@ -126,7 +126,7 @@ If you have more than 2 jobs please refer to “_Creation time_” column to fin
   
 ![Preprocess](https://user-images.githubusercontent.com/36265995/102983900-0c688580-450d-11eb-9193-b09282fd7d0a.png)
 
-2. Let's analyse the first processing job with “***db-***” prefix
+2. Let's analyse the first processing job with "***db-***" prefix
 
 The first processing job is a part of **_Analyzing Data_** and at the same time the very first task of Autopilot at all. In this step, the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for bucket and `sagemaker/autopilot-churn` as a prefix:
   
