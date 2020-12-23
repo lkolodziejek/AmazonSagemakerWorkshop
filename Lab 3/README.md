@@ -141,8 +141,10 @@ From the raport you can read for example:
 
 We will skip the rest of the report as we are the experts now. After the ***Lab 1*** we know everything about this dataset.
 
-When Amazon Sagemaker Autopilot analyzed the dataset it generated **10** machine learning pipeline(s) that use **3** algorithm(s). Each pipeline contains a set of feature transformers and an algorithm.
+When Amazon Sagemaker Autopilot analyzed the dataset it generated **10** machine learning pipeline(s) that use **3** algorithm(s). Each pipeline contains a set of feature transformers and an algorithm. All this artifacts are located here:  
 
 
+![pr-1](https://user-images.githubusercontent.com/36265995/102991475-8ef74200-4519-11eb-9d36-6acabc6fabc4.png)
 
+Take a look wat
 
