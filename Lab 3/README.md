@@ -139,8 +139,10 @@ From the raport you can read for example:
 > This is identified as a **`BinaryClassification`** problem.  
 > Here are **2** examples of labels: `['True.', 'False.']`.  
 
+We will skip the rest of the report as we are the experts now. After the ***Lab 1*** we know everything about this dataset.
 
-the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for bucket and `sagemaker/autopilot-churn` as a prefix:
+When Amazon Sagemaker Autopilot analyzed the dataset it generated **10** machine learning pipeline(s) that use **3** algorithm(s). Each pipeline contains a set of feature transformers and an algorithm.
+
 
 
 
