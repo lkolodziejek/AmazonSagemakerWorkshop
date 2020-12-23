@@ -174,5 +174,15 @@ The feature engineering pipeline consists of two SageMaker jobs. At this point A
 
 1. Open “_Training/Training jobs_” on the left menu. You will find 10 jobs, that Autopilot has started in order to train data transformers.
 
-As you can see all of the training jobs have the `automl-chu-dpp` prefix:
+As you can see all of the training jobs have the `automl-chu-dpp` prefix:  
+  
+  
+![TransformTrainer](https://user-images.githubusercontent.com/36265995/103009307-e5bf4480-4536-11eb-930f-9d86700ca932.png)
+  
+The trained data transformers model were saved in s3 bucker foler `data-processor-models` as follow:
 
+![DataTransformerModel](https://user-images.githubusercontent.com/36265995/103010618-df31cc80-4538-11eb-9493-b9fc20ca54d5.png)
+  
+2. Now open “_Inference/Batch transform jobs_” on the left menu. You will find 10 jobs, that Autopilot has started in order to train data transformers.
+
+As you can see all of the training jobs have the `automl-chu-dpp` prefix:  
