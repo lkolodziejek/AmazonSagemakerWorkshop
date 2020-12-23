@@ -118,10 +118,11 @@ Let's start with login to AWS Management Console and opening Amazon SageMaker se
 
 ## “Analyzing Data” pipeline stage
 
-1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix “***db-***” and second with prefix “***pr***”.  
+1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix “***db-***” and the second with prefix “***pr-***”.  
   
   
-If you have more than 2 jobs please refer to those that have been started closest to ”*_Creation time_*” time.
+If you have more than 2 jobs please refer to those that have been started closest to ”*_Creation time_*” time.  
+  
   
 ![Preprocess](https://user-images.githubusercontent.com/36265995/102983900-0c688580-450d-11eb-9193-b09282fd7d0a.png)
 
