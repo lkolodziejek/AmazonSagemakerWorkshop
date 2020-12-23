@@ -109,7 +109,14 @@ With the following code you can monitor the progrss of the Autopilot job:
 
 # Analysis of output artifacts
 
-In this part of the lab we will analyze what the Amazon Sagemaker Autopilot did in the background. Let's start with login to AWS Management Console and opening Amazon SageMaker service dashboard.
+In this part of the lab we will analyze what the Amazon Sagemaker Autopilot did in the background in each particular pipeline stage:  
+- **_Analyzing Data_**  
+- **_Feature Engineering_**  
+- **_Model Tuning_**  
+
+Let's start with login to AWS Management Console and opening Amazon SageMaker service dashboard.
+
+## “Analyzing Data” pipeline stage
 
 1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix “***db-***” and second with prefix “***pr***”.  
   
@@ -157,4 +164,14 @@ Amazon Sagemaker Autopilot decided that all this **10** data transformers will f
 **!! Autopilot generated one more very useful notebook that will guide you through the pipelines/candidates/modules that were created at this step**. You can download `SageMakerAutopilotDataExplorationNotebook.ipynb` here:  
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
-4. Next, 
+## “Feature Engineering” pipeline stage
+The feature engineering pipeline consists of two SageMaker jobs:
+
+1. Generated trainable data transformer Python modules like [dpp0.py](automl-churn-22-13-32-04-artifacts/generated_module/candidate_data_processors/dpp0.py), which has been downloaded to the local file system
+2. A **training** job to train the data transformers
+3. A **batch transform** job to apply the trained transformation to the dataset to generate the algorithm compatible data
+
+The transformers and its training pipeline are built using open sourced **[sagemaker-scikit-learn-container][]** and **[sagemaker-scikit-learn-extension][]**.
+
+[sagemaker-scikit-learn-container]: https://github.com/aws/sagemaker-scikit-learn-container
+[sagemaker-scikit-learn-extension]: https://github.com/aws/sagemaker-scikit-learn-extension
