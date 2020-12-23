@@ -133,6 +133,12 @@ The second processing job is also a part of **_Analyzing Data_**. In this step A
 At the beginning Autopilot will analyze the data set. As an outcome a ***Amazon SageMaker Autopilot Data Exploration*** report will be generated. You can downloadit within our backet in folder:
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
+From the raport you can read for example:
+> We read **`2666`** rows from the training dataset.  
+> The dataset has **`21`** columns and the column named **`Churn?`** is used as the target column.  
+> This is identified as a **`BinaryClassification`** problem.  
+> Here are **2** examples of labels: `['True.', 'False.']`.  
+
 
 the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for bucket and `sagemaker/autopilot-churn` as a prefix:
 
