@@ -13,7 +13,8 @@ In this lab SageMaker Autopilot first inspects your data set, and runs a number 
 - [_Setting up the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setting-up-the-amazon-sagemaker-autopilot-job)
 - [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job)
 - [_Analysis of output artifacts_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#analysis-of-output-artifacts)
-  
+- [_Results_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#analysis-of-output-artifacts)
+
 **Ok, lest start the lab!!**
 
 # Setup
@@ -215,3 +216,7 @@ This HPO job started 20 training jobs in 2 batches (10 jobs per batch). All trai
 
 
 ***Congratulations!!*** You have successfully nalyze Amazon Sagemaker Autopilot artifacts that were generated in the background in each particular pipeline stage.
+
+# Results
+
+????
