@@ -130,7 +130,7 @@ The first processing job is a part of **_Analyzing Data_** and at the same time 
 
 The second processing job is also a part of **_Analyzing Data_**. In this step Autopilot is doing a huge amount of work for us. So, let's deep dive and figure out what exactly was done here.
 
-At the beginning Autopilot will analyze the data set. As an outcome a ***Amazon SageMaker Autopilot Data Exploration*** report will be generated. You can downloadit within our backet in folder:
+At the beginning Autopilot will analyze the data set. As an outcome a ***Amazon SageMaker Autopilot Data Exploration*** report will be generated. You can download `SageMakerAutopilotCandidateDefinitionNotebook.ipynb`here:
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
 From the raport you can read for example:
@@ -146,5 +146,14 @@ When Amazon Sagemaker Autopilot analyzed the dataset it generated **10** machine
 
 ![pr-1](https://user-images.githubusercontent.com/36265995/102991475-8ef74200-4519-11eb-9d36-6acabc6fabc4.png)
 
-Take a look wat
+Take a look what was generated inside this folder. Next we will look at trainable data transformer Python modules like `dpp0.py` and `dpp2.py`.
+
+`dpp0.py`: This data transformation strategy first transforms 'numeric1' features using ***RobustImputer*** (converts missing values to nan), 'categorical1' features using ***ThresholdOneHotEncoder***, 'text1' features using ***MultiColumnTfidfVectorizer***. It merges all the generated features and applies ***RobustStandardScaler***. The transformed data will be used to tune a ***xgboost*** model.
+
+`dpp2.py`: This data transformation strategy first transforms 'numeric1' features using combined ***RobustImputer*** and ***RobustMissingIndicator*** followed by ***QuantileExtremeValuesTransformer***, 'categorical1' features using ***ThresholdOneHotEncoder***, 'text1' features using ***MultiColumnTfidfVectorizer***. It merges all the generated features and applies ***RobustPCA*** followed by ***RobustStandardScaler***. The transformed data will be used to tune a ***linear-learner*** model.
+
+Amazon Sagemaker Autopilot decided that all this **10** data transformers will fit best here.
+
+Autopilot generated one more very usefull notebook that will guide you throught the pipilines/canidtes/modules that were created at this step. You can download `SageMakerAutopilotDataExplorationNotebook.ipynb` here:  
+> customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
