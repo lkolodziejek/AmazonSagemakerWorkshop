@@ -183,6 +183,15 @@ The trained data transformers model were saved in s3 bucker foler `data-processo
 
 ![DataTransformerModel](https://user-images.githubusercontent.com/36265995/103010618-df31cc80-4538-11eb-9493-b9fc20ca54d5.png)
   
-2. Now open “_Inference/Batch transform jobs_” on the left menu. You will find 10 jobs, that Autopilot has started in order to train data transformers.
+2. Now open “_Inference/Batch transform jobs_” on the left menu. You will find 10 batch jobs, that Autopilot has started in order to transform dataset using models trained in previous step.
 
-As you can see all of the training jobs have the `automl-chu-dpp` prefix:  
+As you can see all of the batch jobs have the `automl-chu-dpp` prefix:  
+
+![BatchTransform](https://user-images.githubusercontent.com/36265995/103010840-39cb2880-4539-11eb-9222-6e17123e4c11.png)
+
+The transformed data was saved in s3 bucker foler `transformed-data` as follow:
+
+![transformed-data](https://user-images.githubusercontent.com/36265995/103011444-38e6c680-453a-11eb-934b-29a0824d7262.png)
+
+
+## "Model Tuning" pipeline stage  
