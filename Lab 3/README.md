@@ -128,17 +128,17 @@ If you have more than 2 jobs please refer to “_Creation time_” column to fin
 
 2. Let's analyse the first processing job with "***db-***" prefix
 
-The first processing job is a part of **_Analyzing Data_** and at the same time the very first task of Autopilot at all. In this step, the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for bucket and `sagemaker/autopilot-churn` as a prefix:
+This is the very first task of Autopilot. In this step, the dataset is verified whether it is suitable for further processing or not. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for the bucket and `sagemaker/autopilot-churn` as a prefix:
   
   
 ![db-1](https://user-images.githubusercontent.com/36265995/102987307-6ae43280-4512-11eb-8458-30242ffa3f04.png)
 
 
-3. Now, let's analyse the second processing job with “***pr***” prefix
+3. Now, let's analyse the second processing job with "***pr***" prefix
 
-The second processing job is also a part of **_Analyzing Data_**. In this step Autopilot is doing a huge amount of work for us. So, let's deep dive and figure out what exactly was done here.
+In this step Autopilot is doing a huge amount of work for us. So, let's deep dive and figure out what exactly was done here.
 
-At the beginning Autopilot will analyze the data set. As an outcome a ***Amazon SageMaker Autopilot Data Exploration*** report will be generated. You can download `SageMakerAutopilotCandidateDefinitionNotebook.ipynb`here:
+At the beginning Autopilot will analyze the data set. As an outcome a ***Amazon SageMaker Autopilot Data Exploration*** report will be generated in form of notebook. You can download `SageMakerAutopilotCandidateDefinitionNotebook.ipynb`here:
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
 From the raport you can read for example:
@@ -149,30 +149,30 @@ From the raport you can read for example:
 
 We will skip the rest of the report as we are the experts now. After the ***Lab 1*** we know everything about this dataset.
 
-When Amazon Sagemaker Autopilot analyzed the dataset it generated **10** machine learning pipeline(s) that use **3** algorithm(s). Each pipeline contains a set of feature transformers and an algorithm. All this artifacts are located here:  
+When Amazon Sagemaker Autopilot analyzed the dataset it generated **10** machine learning pipeline(s) that use **3** algorithm(s). Each pipeline contains a set of feature transformers and an algorithm. The artifacts for this step are located in S3 bucket in folder `sagemaker-automl-candidates` as follow:  
 
 
 ![pr-1](https://user-images.githubusercontent.com/36265995/102991475-8ef74200-4519-11eb-9d36-6acabc6fabc4.png)
 
-Take a look what was generated inside this folder. Next we will look at trainable data transformer Python modules like `dpp0.py` and `dpp2.py`.
+Take a look at what was generated inside this folder. Next we will look at trainable data transformer Python modules like `dpp0.py` and `dpp2.py` in `sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/generated_module/candidate_data_processors/` folder. 
 
 `dpp0.py`: This data transformation strategy first transforms 'numeric1' features using ***RobustImputer*** (converts missing values to nan), 'categorical1' features using ***ThresholdOneHotEncoder***, 'text1' features using ***MultiColumnTfidfVectorizer***. It merges all the generated features and applies ***RobustStandardScaler***. The transformed data will be used to tune a ***xgboost*** model.
 
 `dpp2.py`: This data transformation strategy first transforms 'numeric1' features using combined ***RobustImputer*** and ***RobustMissingIndicator*** followed by ***QuantileExtremeValuesTransformer***, 'categorical1' features using ***ThresholdOneHotEncoder***, 'text1' features using ***MultiColumnTfidfVectorizer***. It merges all the generated features and applies ***RobustPCA*** followed by ***RobustStandardScaler***. The transformed data will be used to tune a ***linear-learner*** model.
 
-Amazon Sagemaker Autopilot decided that all this **10** data transformers will fit best here.
+Amazon Sagemaker Autopilot decided that all this **10** data transformers will fit the best for this partucular problem.
 
 **!! Autopilot generated one more very useful notebook that will guide you through the pipelines/candidates/modules that were created at this step**. You can download `SageMakerAutopilotDataExplorationNotebook.ipynb` here:  
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
-## “Feature Engineering” pipeline stage
-The feature engineering pipeline consists of two SageMaker jobs:
+## “Feature Engineering” pipeline stage  
 
-1. Generated trainable data transformer Python modules like [dpp0.py](automl-churn-22-13-32-04-artifacts/generated_module/candidate_data_processors/dpp0.py), which has been downloaded to the local file system
-2. A **training** job to train the data transformers
-3. A **batch transform** job to apply the trained transformation to the dataset to generate the algorithm compatible data
+The feature engineering pipeline consists of two SageMaker jobs. At this point Autopilot has already generated trainable data transformer Python modules like `dpp0.py`. The mentioned set of jobs are:
 
-The transformers and its training pipeline are built using open sourced **[sagemaker-scikit-learn-container][]** and **[sagemaker-scikit-learn-extension][]**.
+- A **training** job to train the data transformers.
+- A **batch transform** job to apply the trained transformation to the dataset to generate the algorithm compatible data. We will use it in **_Model Tuning_** pipeline stage later on.
 
-[sagemaker-scikit-learn-container]: https://github.com/aws/sagemaker-scikit-learn-container
-[sagemaker-scikit-learn-extension]: https://github.com/aws/sagemaker-scikit-learn-extension
+1. Open “_Training/Training jobs_” on the left menu. You will find 10 jobs, that Autopilot has started in order to train data transformers.
+
+As you can see all of the training jobs have the `automl-chu-dpp` prefix:
+
