@@ -195,3 +195,8 @@ The transformed data was saved in s3 bucker foler `transformed-data` as follow:
 
 
 ## "Model Tuning" pipeline stage  
+
+  
+After each featurized dataset is prepared, execute a multi-algorithm tuning job that will run tuning jobs
+in parallel for each pipeline. This tuning job will execute training jobs to find the best set of
+hyper-parameters for each pipeline, as well as finding the overall best performing pipeline.
