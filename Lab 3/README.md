@@ -126,7 +126,7 @@ The first processing job is a part of **_Analyzing Data_** and at the same time 
 ![db-1](https://user-images.githubusercontent.com/36265995/102987307-6ae43280-4512-11eb-8458-30242ffa3f04.png)
 
 
-2. Now, let's analyse the second processing job with “***pr***” prefix
+3. Now, let's analyse the second processing job with “***pr***” prefix
 
 The second processing job is also a part of **_Analyzing Data_**. In this step Autopilot is doing a huge amount of work for us. So, let's deep dive and figure out what exactly was done here.
 
@@ -157,3 +157,4 @@ Amazon Sagemaker Autopilot decided that all this **10** data transformers will f
 **!! Autopilot generated one more very useful notebook that will guide you through the pipelines/candidates/modules that were created at this step**. You can download `SageMakerAutopilotDataExplorationNotebook.ipynb` here:  
 > customer-churn-autopilot/sagemaker/autopilot-churn/output/automl-churn-22-13-32-04/sagemaker-automl-candidates/pr-1-413c3523dc0542d6aa408352dc9da401c7df3ed39ad04a8bbf9d50a388/notebooks/
 
+4. Next, 
