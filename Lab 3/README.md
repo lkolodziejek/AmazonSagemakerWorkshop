@@ -111,11 +111,11 @@ With the following code you can monitor the progrss of the Autopilot job:
 
 In this part of the lab we will analyze what the Amazon Sagemaker Autopilot did in the background. Let's start with login to AWS Management Console and opening Amazon SageMaker service dashboard.
 
-1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix ”**_db-_**” and second with prefix ”**_pr-_**”.  
+1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix **_db-_** and second with prefix **_pr_**.  
   
   
 If you have more than 2 jobs please refer to those that have been started closest to ”*_Creation time_*” time.
   
 ![Preprocess](https://user-images.githubusercontent.com/36265995/102983900-0c688580-450d-11eb-9193-b09282fd7d0a.png)
 
-
+The first processing job (with prefix **_db-_**) is a part of **_Analyzing Data_** and at the same time the very first task of Autopilot at all. In this step, the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket as follow:
