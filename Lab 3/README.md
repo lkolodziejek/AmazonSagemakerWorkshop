@@ -111,7 +111,7 @@ With the following code you can monitor the progrss of the Autopilot job:
 
 In this part of the lab we will analyze what the Amazon Sagemaker Autopilot did in the background. Let's start with login to AWS Management Console and opening Amazon SageMaker service dashboard.
 
-1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix ”*_db-_*” and second with prefix ”*_pr-_*”.  
+1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First with prefix ”**_db-_**” and second with prefix ”**_pr-_**”.  
   
   
 If you have more than 2 jobs please refer to those that have been started closest to ”*_Creation time_*” time.
