@@ -118,13 +118,13 @@ If you have more than 2 jobs please refer to those that have been started closes
   
 ![Preprocess](https://user-images.githubusercontent.com/36265995/102983900-0c688580-450d-11eb-9193-b09282fd7d0a.png)
 
-The first processing job (with prefix “**_db-_**”) is a part of **_Analyzing Data_** and at the same time the very first task of Autopilot at all. In this step, the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot' name for bucket and `sagemaker/autopilot-churn` as a prefix:
+The first processing job (with prefix “**_db-_**”) is a part of **_Analyzing Data_** and at the same time the very first task of Autopilot at all. In this step, the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for bucket and `sagemaker/autopilot-churn` as a prefix:
   
   
 ![db-1](https://user-images.githubusercontent.com/36265995/102987307-6ae43280-4512-11eb-8458-30242ffa3f04.png)
 
 
-
+The second processing job (with prefix “**_pr-_**”) is also a part of **_Analyzing Data_** and at the same time the very first task of Autopilot at all. In this step, the data set is verified whether it is suitable for further processing. Things like the number of attributes for each row is validated here. Next the dataset is randomly shuffle and split into train and validation sets as well. The artifacts for this step are located in S3 bucket in folder `preprocessed-data` as follow. Keep in mind that in my notebook I've used `customer-churn-autopilot` name for bucket and `sagemaker/autopilot-churn` as a prefix:
 
 
 
