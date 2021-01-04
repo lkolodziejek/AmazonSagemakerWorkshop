@@ -4,7 +4,6 @@ import boto3
 import json
 import csv
 import base64
-import os
 
 ENDPOINT_NAME = os.environ['ENDPOINT_NAME']
 sagemaker = boto3.client('runtime.sagemaker')
