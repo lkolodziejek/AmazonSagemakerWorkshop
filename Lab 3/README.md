@@ -240,4 +240,10 @@ You can verify if your model is hosted by Amazon Sagemaker. Please go to Amazon 
 
 # Inference the model with simple web page
 
-Now it is the time to test our model. We have already deployed it. So, in this step, you will inference the trained model throught simple web page that you will create. We have already did it in Lab 1, that is why pleass refer to detailed instruction how to do this [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#inference-the-model-with-simple-web-page).
+Now it is the time to test our model. We have already deployed it. So, in this step, you will inference the trained model throught simple web page that you will create. We have already did it in Lab 1, that is why pleass refer to detailed instruction how to do this [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#inference-the-model-with-simple-web-page). Please use:
+
+- `RoleForInvokingTheModel` as a execution role for lambda function that will inference the model;
+- `autopilot-customerchurn-ep-invoker-lambda.py` as a lambda function code that will inference the model;
+- `autopilot-customerchurn-website.html` as a html code for www page (interface to the model);
+
+-
