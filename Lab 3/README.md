@@ -246,4 +246,10 @@ Now it is the time to test our model. We have already deployed it. So, in this s
 - `autopilot-customerchurn-ep-invoker-lambda.py` as a lambda function code that will inference the model;
 - `autopilot-customerchurn-website.html` as a html code for www page (interface to the model);
 
-___!!!Also please set lambda function timeout for at least 5 seconds___
+___!!! Also please set lambda function timeout for at least 5 seconds !!!___
+
+You should end up this step with this result:
+
+![WWW](https://user-images.githubusercontent.com/36265995/103540324-d37bc980-4e99-11eb-8055-3664e3183024.png)
+
+***Congratulations!!*** You have successfully expose your model via simple web page.
