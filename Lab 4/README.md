@@ -1,6 +1,9 @@
 # Lab 4 - Model retraining
 
-In this lab, you will get hands-on with Amazon Sagemaker AutoML. An automated machine learning (commonly referred to as AutoML) solution for tabular datasets. You can use SageMaker Autopilot in different ways: on autopilo (hence the name) or with human guidance, without code through SageMaker Studio, or using the AWS SDKs.
+In this lab, you will get hands-on with model retraining. We will build simple but fully automated solution to retrain the model whenever a new dataset is delivered. To make our live simpler we will use the best candidate we have selected in Lab 3. Our pipline works as follows:
+
+- You 
+
 
 Losing customers is costly for any business. Identifying unhappy customers early on gives you a chance to offer them incentives to stay. This lab describes using machine learning (ML) for the automated identification of unhappy customers, also known as customer churn prediction. We will use the same data set as we did in **_Lab 1_** as we are already familiar with it.
 
