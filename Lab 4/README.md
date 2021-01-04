@@ -1,4 +1,4 @@
-# Lab 3 - Model retraining
+# Lab 4 - Model retraining
 
 In this lab, you will get hands-on with Amazon Sagemaker AutoML. An automated machine learning (commonly referred to as AutoML) solution for tabular datasets. You can use SageMaker Autopilot in different ways: on autopilo (hence the name) or with human guidance, without code through SageMaker Studio, or using the AWS SDKs.
 
