@@ -5,6 +5,7 @@ Welcome to Amazon Sagemaker Workshops. Going through this material you will lear
 * [**_Lab 1_**](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/tree/main/Lab%201) - Feature Engineering, Training (using built in algorithm - XGBoost), Deployment, Inferention
 * [**_Lab 2_**](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/tree/main/Lab%202) - Feature Engineering, Training (using your own scikit-learn scripts), Deployment, Inferention
 * [**_Lab 3_**](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/tree/main/Lab%203) - Auto ML on Amazon Sagemaker
+* [**_Lab 4_**](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/tree/main/Lab%203) - Model retraining
 
 # Prerequisite
 Create an S3 bucket in the same region as your Amazon SageMaker studio. The Ireland region will be used in all laboratories. Follow the link for detailed steps if required ([_https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html_](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html)). This bucket is used to store intermediate results computed during SageMaker studio.
