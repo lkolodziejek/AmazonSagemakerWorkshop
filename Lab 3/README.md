@@ -123,7 +123,7 @@ Let's start with login to AWS Management Console and opening Amazon SageMaker se
 1. Open “_Processing/Processing jobs_” on the left menu. You will find to jobs, that Autopilot has started. First one with prefix "***db-***" and the second one with prefix "***pr-***".  
   
   
-If you have more than 2 jobs please refer to “_Creation time_” column to find your jobs. 
+If you have more than 2 jobs please refer two “_Creation time_” column to find your jobs. 
   
   
 ![Preprocess](https://user-images.githubusercontent.com/36265995/102983900-0c688580-450d-11eb-9193-b09282fd7d0a.png)
