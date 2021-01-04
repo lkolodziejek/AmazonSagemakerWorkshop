@@ -102,7 +102,7 @@ Finally we can now launch the Autopilot job by calling the `create_auto_ml_job` 
 
 ![RunAutoPilotWithOutput](https://user-images.githubusercontent.com/36265995/103557022-e2bb4100-4eb2-11eb-85c8-1718a5c63ff2.png)
 
-The Amazon Sagemaker Autopilot job with name `___automl-churn-22-13-32-04___` that we have just started will process through the 3 following steps:
+The Amazon Sagemaker Autopilot job `automl-churn-22-13-32-04` that we have just started will process through the 3 following steps:
  
 - **_Analyzing Data_**, where the dataset is analyzed and Autopilot comes up with a list of ML pipelines that should be tried out on the dataset. The dataset is also split into train and validation sets.
 - **_Feature Engineering_**, where Autopilot performs feature transformation on individual features of the dataset as well as at an aggregate level.
