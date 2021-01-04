@@ -14,7 +14,8 @@ In this lab SageMaker Autopilot first inspects your data set, and runs a number 
 - [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job)
 - [_Analysis of output artifacts_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#analysis-of-output-artifacts)
 - [_Results_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#results)
-- [_Deploy and host the best model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#results)
+- [_Deploy the best model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#results)
+- [_Inference the model with simple web page_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#results)
 
 **Ok, lest start the lab!!**
 
@@ -227,7 +228,7 @@ Finally, we will find out which model turned out to be the best one. We will use
 The best candidate name is: `tuning-job-1-68b0d889fb234badb4-012-ef007be0` with validation metric: 'F1' and its value: `0.891319990158081`.
 Due to some randomness in the algorithms you might received slightly different results. 
 
-# Deploy and host the best model
+# Deploy the best model
 
 Ok. We've trained the algorithm, so now let's create a model and deploy it to a hosted endpoint. I will use ml.m4.xlarge to host the model.
 
@@ -237,5 +238,5 @@ You can verify if your model is hosted by Amazon Sagemaker. Please go to Amazon 
 
 ![endpoint](https://user-images.githubusercontent.com/36265995/103532533-b0e2b400-4e8b-11eb-83d4-297d67840f7b.png)
 
-
+# Inference the model with simple web page
 
