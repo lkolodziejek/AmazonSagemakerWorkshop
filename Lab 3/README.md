@@ -252,4 +252,5 @@ You should end up this step with this result:
 
 ![WWW](https://user-images.githubusercontent.com/36265995/103540324-d37bc980-4e99-11eb-8055-3664e3183024.png)
 
-***Congratulations!!*** You have successfully expose your model via simple web page.
+***Congratulations!!*** You have successfully completed this lab. Now you can go to Lab 4 where you will retrain the model. Please write down the follwoing values as we will need them to complete Lab 4:
+-  ___Endpoint name___: In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
