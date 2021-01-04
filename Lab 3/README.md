@@ -219,4 +219,11 @@ This HPO job started 20 training jobs in 2 batches (10 jobs per batch). All trai
 
 # Results
 
-????
+Finally, we will find out which model turned out to be the best one. We will use `describe_auto_ml_job` API to look up the best candidate selected by the SageMaker Autopilot job:
+
+![Results](https://user-images.githubusercontent.com/36265995/103529320-bf2dd180-4e85-11eb-88c8-08bac30e4206.png)
+
+The best candidate name is: `tuning-job-1-68b0d889fb234badb4-012-ef007be0` with validation metric: 'F1' and its value: `0.891319990158081`.
+Due to some randomness in the algorithms you might received slightly different results.
+
+# Hosting
