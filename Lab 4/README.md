@@ -29,3 +29,16 @@ In this lab, you will get hands-on with model retraining. We will build simple b
   
   ![](https://user-images.githubusercontent.com/36265995/102612322-cee0b280-4130-11eb-9557-b58c668c86d6.png)
   
+  
+3. In search box tap `AmazonSageMakerFullAccess` and check this permissions policy. Then press _"Next: Tags"_ button:
+  
+  
+![Next-Tags](https://user-images.githubusercontent.com/36265995/103635487-ded9fe00-4f48-11eb-9f22-563091066228.png)  
+  
+  
+4.  Select “Next: Review” and provide name for the role. Then press _"Ceate role"_:
+  
+  
+  ![CreateRoleFinal](https://user-images.githubusercontent.com/36265995/103635875-73446080-4f49-11eb-8ee8-f555f755fa03.png)
+  
+ 
