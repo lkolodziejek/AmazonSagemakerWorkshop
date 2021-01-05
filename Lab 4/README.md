@@ -11,7 +11,7 @@ In this lab, you will get hands-on with model retraining. We will build simple b
 **In this lab we will go through the following sections:**
 
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#setup)
-- [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#data)
+- [_Lambda function for retraining process_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#lambda-function-for-retraining-process)
 - [_Setting up the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setting-up-the-amazon-sagemaker-autopilot-job)
 - [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job)
 
@@ -46,4 +46,18 @@ In this lab, you will get hands-on with model retraining. We will build simple b
 
 # Lambda function for retraining process
 
-In this section we will build lambda function that will orchestrate model retraining process. Please keep in mind that AWS Lambda service is limited to 15 minutes of execution period only. In our case is more then we need. 
+In this section we will build lambda function that orchestrates model retraining process. Please keep in mind that AWS Lambda service is limited to 15 minutes of execution period only. In our case it is more then we need. Still if you need longer execution period you should consider AWS Step Function instead.
+
+1. Navigate to AWS Lambda service dashboard and pick _"Create function"_ button.  
+  
+  
+![Create Function](https://user-images.githubusercontent.com/36265995/103642448-704e6d80-4f53-11eb-8bc6-b0e89de0cbd6.png)
+  
+  
+2. Provide a name for your lambda functiony and select **_Python 3.7_** as runtime. Next, expand “_Change default execution role_” in “_Permissions_” section. Select “_Use an existing role_” and select the role you created few steps earlier. Finally select “_Create function_”
+
+![](https://user-images.githubusercontent.com/36265995/102625458-d199d280-4145-11eb-96a4-638fb7756a18.png)
+
+3. Now, copy the content of the `xgboost-customerchurn-ep-invoker-lambda.py` file into lambda code editor.
+
+In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
