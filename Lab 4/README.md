@@ -94,7 +94,7 @@ Ok. Now we can dig into details of this code:
   
 7. Ok. Now configure the trigger as below. Press _"Add"_ when you done.
   
-  ![AddTriggerConf](https://user-images.githubusercontent.com/36265995/103659957-53269880-4f6d-11eb-82f4-36aaff5ec92c.png)
+  ![AddTriggerConf](https://user-images.githubusercontent.com/36265995/103667265-fda2b980-4f75-11eb-9962-4b96172fb44c.png)
   
   
  ___Congratulations !!___! You have successfully completed this section. 
@@ -111,4 +111,24 @@ Ok. Now we can dig into details of this code:
  
  We didn't modify the `train_data.csv` file as it was not our goal here. We upload the same file triggering the lambda function.
  
- 3. Verify if new training job has launched
+ 3. Verify if new training job has launched:
+ 
+ ![TrainingJob](https://user-images.githubusercontent.com/36265995/103665993-58d3ac80-4f74-11eb-9e87-3eb141c1adc5.png)
+ 
+ 4. Verify if new model was created:
+   
+   ![Model](https://user-images.githubusercontent.com/36265995/103666456-f62ee080-4f74-11eb-86a0-cc272a080b14.png)
+
+5. Verify if new endpoint configuration was created:
+
+![EnpointConfiguration](https://user-images.githubusercontent.com/36265995/103666844-71909200-4f75-11eb-98cc-73360346a282.png)
+
+6. Verify if enpoint updating process has started:
+
+![Endpoint](https://user-images.githubusercontent.com/36265995/103667102-cc29ee00-4f75-11eb-9288-c0982c63a029.png)
+
+
+7. Finally verify if our web mage is serving prediction:
+
+
+
