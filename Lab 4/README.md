@@ -73,4 +73,16 @@ Now please set up all above environment variables for lambda function. You shoul
 
 5. Now, copy the content of the `autopilot-customerchurn-retrainer-lambda.py` file into lambda code editor.
 
+Ok. Now we can dig into details of this code:  
+- In lines 1-7 we do very basic things. Basically we import necessary libraries and initialize boto client for Amazon Sagemaker service.
+- In line 8 we start defining lambda function. This is the entry point for handling the event that will be generated/triggered when we put new dataset in S3 bucket. We will get to that shortly.
+- In lines 9-14 we initialize variables according to the environment variables configuration.
+- In lines 15-16 we define timestamp suffix for better traceability of output artifact during retraining process.
+- In lines 18-20 finally we get a handler to the best canidate that was selecterd in the lab 3. With this handler we can reach all information that we ned to run training job again.
+- In line 24 we do a very tricky thing. As we have already trained the best candidate earlier we have also received all metric definitions. We don't want to pass this information to training job a priori so we delete this entry. If you skip this part you will get an error.
+- In line 27 we define name for new training job.
+- In lines 29-39 we start the training job.
+- In line 
+
+
 In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
