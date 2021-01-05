@@ -41,4 +41,9 @@ In this lab, you will get hands-on with model retraining. We will build simple b
   
   ![CreateRoleFinal](https://user-images.githubusercontent.com/36265995/103635875-73446080-4f49-11eb-8ee8-f555f755fa03.png)
   
- 
+5. We have successfully completed this part of lab. Now move on to the next section.
+
+
+# Lambda function for retraining process
+
+In this section we will build lambda function that will orchestrate model retraining process. Please keep in mind that AWS Lambda service is limited to 15 minutes of execution period only. In our case is more then we need. 
