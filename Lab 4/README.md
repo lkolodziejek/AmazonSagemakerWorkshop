@@ -130,5 +130,9 @@ Ok. Now we can dig into details of this code:
 
 7. Finally verify if our web mage is serving prediction:
 
+You should end up this step with this result:
 
+![WWW](https://user-images.githubusercontent.com/36265995/103540324-d37bc980-4e99-11eb-8055-3664e3183024.png)
+
+***Congratulations!!*** You have successfully completed this lab.
 
