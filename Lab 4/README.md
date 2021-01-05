@@ -13,7 +13,7 @@ In this lab, you will get hands-on with model retraining. We will build simple b
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#setup)
 - [_Lambda function for retraining process_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#lambda-function-for-retraining-process)
 - [_Testing_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#testing)
-- [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job)
+
 
 
 **Ok, lest start the lab !!!**
