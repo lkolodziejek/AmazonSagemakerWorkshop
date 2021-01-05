@@ -82,7 +82,33 @@ Ok. Now we can dig into details of this code:
 - In line 24 we do a very tricky thing. As we have already trained the best candidate earlier we have also received all metric definitions. We don't want to pass this information to training job a priori so we delete this entry. If you skip this part you will get an error.
 - In line 27 we define name for new training job.
 - In lines 29-39 we start the training job.
-- In line 
+- In line 42 we wait until the training job is done to proceed with next steps.
+- In line 45 we define name for the new model.
+- In line 46 we create model using best_candidate['InferenceContainers'] entry to define things like url to store model.
+- Finally in lines 49-53 we create endpoint configuration and update endpoint created in lab 3 with the newly trained model.
 
-
-In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
+6. Now let's trigger AWS lambda function whenever new training dataset will appear in S3 bucket. Press _"+ Add trigger"_ in the lambda Designer:
+  
+  ![AddTrigger](https://user-images.githubusercontent.com/36265995/103658529-9c75e880-4f6b-11eb-8c67-954ea9effebd.png)
+  
+  
+7. Ok. Now configure the trigger as below. Press _"Add"_ when you done.
+  
+  ![AddTriggerConf](https://user-images.githubusercontent.com/36265995/103659957-53269880-4f6d-11eb-82f4-36aaff5ec92c.png)
+  
+  
+ ___Congratulations !!___! You have successfully completed this section. 
+ 
+ # Testing
+ 
+ Finally we can test our retraining process. Please follow below steps.
+ 
+ 1. In your S3 bucket that you have created in lab 3 navigate to folder: `csagemaker/autopilot-churn/train/`;
+ 
+ ![S3](https://user-images.githubusercontent.com/36265995/103660854-5e2df880-4f6e-11eb-81ce-5201703194b8.png)
+ 
+ 2. Download the file `train_data.csv`. Then delete this file from your bucket and upload once again. This will trigger lambda function.
+ 
+ We didn't modify the `train_data.csv` file as it was not our goal here. We upload the same file triggering the lambda function.
+ 
+ 3. Verify if new training job has launched
