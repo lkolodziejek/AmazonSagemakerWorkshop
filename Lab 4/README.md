@@ -8,7 +8,8 @@ In this lab, you will get hands-on with model retraining. We will build simple b
 4. With this configuration you will start the training job and build the model;
 5. Finally you will update endpoint from Lab 3 with the new model;  
   
-    
+In this lab we will go through the following sections:
+
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setup)
 - [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#data)
 - [_Setting up the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setting-up-the-amazon-sagemaker-autopilot-job)
@@ -21,7 +22,7 @@ In this lab, you will get hands-on with model retraining. We will build simple b
 
 1. We will start by creating a new role that we will use to execute our lambda function. To do this, login to AWS console and navigate to IAM sevice. Then select _"Role"_ in left menu. Select _"Create role"_ button:  
   
-![CreateRole](https://user-images.githubusercontent.com/36265995/103633666-56f2f480-4f46-11eb-9cf0-923230b20e67.png)
+![CreateRole](https://user-images.githubusercontent.com/36265995/103634459-60c92780-4f47-11eb-8e03-218bedaf60b1.png)
     
   
 2. Pick _"Lamda"_ service in “Choose a use case” section. Next, select “Next: Permissions” button.  
