@@ -97,7 +97,7 @@ Ok. Now we can dig into details of this code:
   ![AddTriggerConf](https://user-images.githubusercontent.com/36265995/103667265-fda2b980-4f75-11eb-9962-4b96172fb44c.png)
   
   
- ___Congratulations !!___! You have successfully completed this section. 
+ ___Congratulations !!!___ You have successfully completed this section. 
  
  # Testing
  
