@@ -36,7 +36,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
 
 
- WSTAW TU ZDJECIE
+ ![Tree](https://user-images.githubusercontent.com/36265995/103892587-1f25b180-50ec-11eb-818d-bd00c55286d6.png)
 
 
 5. Select the kernel for your notebook: “_Python 3(Data Science)_”
