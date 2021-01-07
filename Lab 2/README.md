@@ -154,8 +154,12 @@ The following code will start an Amazon Sagemaker training job that will downloa
   
 # Deploy the model and make prediction
 
-1) In this final step you will deploy and host the model on Amazon Sagemaker endpoint.
-
+1) In this final step you will deploy and host the model on Amazon Sagemaker endpoint.  
+  
+  
+  ![Predict](https://user-images.githubusercontent.com/36265995/103891966-08cb2600-50eb-11eb-8a68-caf9e3cbee5f.png)
+  
+  
 2) Verify if the endpoint was created for you.
   
   
