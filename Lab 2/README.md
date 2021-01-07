@@ -10,7 +10,7 @@ In this lab, you will assume the role of a machine learning developer. Your task
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#setup)
 - [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#data)
 - [_Scikit-learn script_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#scikit-learn-script)
-
+- [_Create SageMaker Scikit Estimator_]()
 ***Ok, lest start the lab !!!***
 
 # Setup
@@ -126,4 +126,4 @@ def model_fn(model_dir):
     return clf
 ```
 
-
+# Create SageMaker Scikit Estimator
