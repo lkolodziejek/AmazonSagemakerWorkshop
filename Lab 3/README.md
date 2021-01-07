@@ -23,8 +23,10 @@ In this lab SageMaker Autopilot first inspects your data set, and runs a number 
 
 1. We will start with opening Notebook `autopilot_customer_churn.ipynb` in “AmazonSagemakerWorkshop/Lab 3” folder. We will skip detailed instruction how to procees as you are the expert now.  
   
-  **Zdjęcie tutaj, jak wygląda katalog Lab 3!**
-    
+  
+![Tree](https://user-images.githubusercontent.com/36265995/103892748-61e78980-50ec-11eb-9674-04f0071f7ed4.png)
+   
+   
 In case You did not follow this workshop in order, you can find detailed instruction how to complete this step [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
   
   
