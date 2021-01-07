@@ -17,6 +17,6 @@ Ok, let's open `Scikit-learn Estimator Example With Batch Transform.ipynb` noteb
 
 **Zdjęcie tutaj, jak wygląda katalog Lab 3!**
     
-In case You did not follow this workshi in order, you can find detailed instruction how to complete this step [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
+In case You did not follow this workshi in order, you can find detailed instruction how to complete this step [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation) (step 1 to 5).
   
   
