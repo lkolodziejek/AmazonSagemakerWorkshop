@@ -57,3 +57,18 @@ In my case it is: `sagemaker-eu-west-1-526743947142`.
   
   
 # Scikit-learn script
+
+Now we are ready to run scikit-learn script using Amazon Sagemaker. More precisely we will use `SKLearn` estimator which support number of helpful environment variables to access properties of the training environment, such as:
+
+- `SM_MODEL_DIR`: A string representing the path to the directory to write model artifacts to. Any artifacts saved in this folder are uploaded to S3 for model hosting after the training job completes.
+- `SM_OUTPUT_DIR`: A string representing the filesystem path to write output artifacts to. Output artifacts may include checkpoints, graphs, and other files to save, not including model artifacts. These artifacts are compressed and uploaded to S3 to the same S3 prefix as the model artifacts.
+- `SM_CHANNEL_TRAIN`: A string representing the path to the directory containing data in the 'train' channel.
+- `SM_CHANNEL_TEST`: Same as above, but for the 'test' channel.
+
+A typical training script loads data from the input channels, configures training with hyperparameters, trains a model, and saves a model to model_dir so that it can be hosted later. Hyperparameters are passed to your script as arguments and can be retrieved with an argparse.ArgumentParser instance. For example, the script that we will run in this notebook is the below:
+
+```python
+import os
+```
+
+
