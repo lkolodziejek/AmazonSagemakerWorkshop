@@ -128,7 +128,7 @@ def model_fn(model_dir):
     return clf
 ```
 
-# Create SageMaker Scikit Estimator
+# Create and run Amazon Sagemaker Scikit-learn estimator
 
 As it was mentioned in previous section we can run Scikit-learn training script using `SKLearn` (sagemaker.sklearn.estimator.sklearn) estimator. It accepts several constructor arguments:
 
@@ -138,5 +138,14 @@ As it was mentioned in previous section we can run Scikit-learn training script 
 - ***sagemaker_session*** (optional): The session used to train on Sagemaker.
 - ***hyperparameters*** (optional): A dictionary passed to the train function as hyperparameters.
 
-1) Now we can construct `SKLearn` estimator with the following code:
+1) Now we can construct `SKLearn` estimator with the following code:  
+  
+  
+  ![Estimator](https://user-images.githubusercontent.com/36265995/103889072-15994b00-50e6-11eb-92be-011c9b96ed8b.png)
+  
+  
+2) And finally we can run training by calling `fit` on the estimator.
+
+The following code will start an Amazon Sagemaker training job that will download the data for us, invoke our scikit-learn code (in the provided script file), and save any model artifacts that the script creates.
+
 
