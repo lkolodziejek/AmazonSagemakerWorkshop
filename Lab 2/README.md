@@ -10,7 +10,7 @@ In this lab, you will assume the role of a machine learning developer. Your task
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#setup)
 - [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#data)
 - [_Scikit-learn script_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#scikit-learn-script)
-- [_https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#create-and-run-amazon-sagemaker-scikit-learn-estimator_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#create-sagemaker-scikit-estimator) 
+- [_Create and run Amazon Sagemaker Scikit-learn estimator_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#create-and-run-amazon-sagemaker-scikit-learn-estimator) 
 
 
 ***Ok, lest start the lab !!!***
