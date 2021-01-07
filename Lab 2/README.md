@@ -11,7 +11,7 @@ In this lab, you will assume the role of a machine learning developer. Your task
 - [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#data)
 - [_Scikit-learn script_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#scikit-learn-script)
 - [_Create and run Amazon Sagemaker Scikit-learn estimator_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#create-and-run-amazon-sagemaker-scikit-learn-estimator) 
-- [_Deploy the model and make prediction_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#create-and-run-amazon-sagemaker-scikit-learn-estimator)   
+- [_Deploy the model and make prediction_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#deploy-the-model-and-make-prediction)   
 
 
 ***Ok, lest start the lab !!!***
