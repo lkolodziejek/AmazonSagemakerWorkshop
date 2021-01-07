@@ -146,6 +146,22 @@ As it was mentioned in previous section we can run Scikit-learn training script 
   
 2) And finally we can run training by calling `fit` on the estimator.
 
-The following code will start an Amazon Sagemaker training job that will download the data for us, invoke our scikit-learn code (in the provided script file), and save any model artifacts that the script creates.
+The following code will start an Amazon Sagemaker training job that will download the data for us, invoke our scikit-learn code (in the provided script file), and save any model artifacts that the script creates. This will take approximately 4 minutes to compete.
+  
+  
+  ![fit](https://user-images.githubusercontent.com/36265995/103890191-eaaff680-50e7-11eb-9078-2c016720cb7c.png)
+  
+  
+# Deploy the model and make prediction
+
+1) In this final step you will deploy and host the model on Amazon Sagemaker endpoint.
+
+2) Verify if the endpoint was created for you.
+  
+  
+  ![endpoint](https://user-images.githubusercontent.com/36265995/103891584-64e17a80-50ea-11eb-81e3-9620eb676a98.png)
+  
+  
+***Congratulations !!!*** You have successfully completed this lab. You can follow further instruction in `Scikit-learn Estimator Example With Batch Transform.ipynb` notebook or navigate to [_lab 3_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/tree/main/Lab%203).  
 
 
