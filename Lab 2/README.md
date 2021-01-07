@@ -129,3 +129,14 @@ def model_fn(model_dir):
 ```
 
 # Create SageMaker Scikit Estimator
+
+As it was mentioned in previous section we can run Scikit-learn training script using `SKLearn` (sagemaker.sklearn.estimator.sklearn) estimator. It accepts several constructor arguments:
+
+- ***entry_point***: The path to the Python script SageMaker runs for training and prediction.
+- ***role***: Role ARN
+- ***train_instance_type*** (optional): The type of SageMaker instances for training. Note: Because Scikit-learn does not natively support GPU training, Sagemaker Scikit-learn does not currently support training on GPU instance types.
+- ***sagemaker_session*** (optional): The session used to train on Sagemaker.
+- ***hyperparameters*** (optional): A dictionary passed to the train function as hyperparameters.
+
+1) Now we can construct `SKLearn` estimator with the following code:
+
