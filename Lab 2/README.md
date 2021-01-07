@@ -8,6 +8,8 @@ In this lab we will learn how to use our own Scikit-learn scripts with Amazon Sa
 In this lab, you will assume the role of a machine learning developer. Your task is to classify different types of irises . You will use notebook `Scikit-learn Estimator Example With Batch Transform.ipynb` that describes how to use machine learning (ML) for the automated classification of irises (Setosa, Versicolour, and Virginica). The main different between ***lab 2*** and ***lab 1*** is that here you will bring your own Scikit-learn scripts and Amazon Sagemaker will provide pre-built container with the framework image.
 
 - [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#setup)
+- [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#data)
+- [_Scikit-learn script_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%202/README.md#setup)
 
 ***Ok, lest start the lab !!!***
 
