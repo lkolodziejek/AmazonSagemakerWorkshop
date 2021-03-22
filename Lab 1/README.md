@@ -9,10 +9,10 @@ Taking ML models from concept to production is typically complex and time-consum
 In this lab, you will assume the role of a machine learning developer. Your task is to identify unhappy customers early on to have a chance to offer them incentives to stay. Losing customers is costly for any business. You will use notebook `xgboost_customer_churn.ipynb` that describes how to use machine learning (ML) for the automated identification of unhappy customers, also known as customer churn prediction. ML models rarely give perfect predictions though, so this notebook is also about how to incorporate the relative costs of prediction mistakes when determining the financial outcome of using ML.
 
 
-- [_Data Preparation_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation)
-- [_Train & Tune the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#train--tune-the-model)
-- [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model)
-- [_Inference the model with simple web page_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#inference-the-model-with-simple-web-page)
+- [_Data Preparation_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation)
+- [_Train & Tune the model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#train--tune-the-model)
+- [_Deploy the model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model)
+- [_Inference the model with simple web page_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#inference-the-model-with-simple-web-page)
 
 
 # Data Preparation
@@ -28,7 +28,7 @@ pip install xgboost
 
 3. Then clone the git repo using below command:
   
-`git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
+`git clone https://github.com/lkolodziejek/AmazonSagemakerWorkshop.git`
   
 4. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
   
@@ -282,7 +282,7 @@ This policy will allow a lambda function to make inferance on the model we have 
 
 10. Now, copy the content of the `xgboost-customerchurn-ep-invoker-lambda.py` file into lambda code editor.
 
-In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
+In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name of the Amazon Sagemaker endpoint that we created while deploying the model. To get this endpooint name please go back to section [_Deploy the model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#deploy-the-model) where you can find it. In this case the neme is: `sagemaker-xgboost-2020-12-17-14-26-01-562`.
 
 ![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
 

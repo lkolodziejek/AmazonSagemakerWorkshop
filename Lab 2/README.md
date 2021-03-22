@@ -8,14 +8,14 @@ Losing customers is costly for any business. Identifying unhappy customers early
 In this lab SageMaker Autopilot first inspects your data set, and runs a number of model candidates to figure out the optimal combination of data preprocessing steps, machine learning algorithms and hyperparameters. It then uses this combination to train an Inference Pipeline, which you can easily deploy either on a real-time endpoint, or use it for batch processing.  
   
   
-- [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setup)
-- [_Data_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#data)
-- [_Setting up the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setting-up-the-amazon-sagemaker-autopilot-job)
-- [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job)
-- [_Analysis of output artifacts_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#analysis-of-output-artifacts)
-- [_Results_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#results)
-- [_Deploy the best model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model)
-- [_Inference the model with simple web page_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#inference-the-model-with-simple-web-page)
+- [_Setup_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setup)
+- [_Data_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#data)
+- [_Setting up the Amazon Sagemaker Autopilot Job_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#setting-up-the-amazon-sagemaker-autopilot-job)
+- [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job)
+- [_Analysis of output artifacts_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#analysis-of-output-artifacts)
+- [_Results_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#results)
+- [_Deploy the best model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model)
+- [_Inference the model with simple web page_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#inference-the-model-with-simple-web-page)
 
 **Ok, lest start the lab!!**
 
@@ -27,7 +27,7 @@ In this lab SageMaker Autopilot first inspects your data set, and runs a number 
 ![Tree](https://user-images.githubusercontent.com/36265995/103892748-61e78980-50ec-11eb-9674-04f0071f7ed4.png)
    
    
-In case You did not follow this workshop in order, you can find detailed instruction how to complete this step [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
+In case You did not follow this workshop in order, you can find detailed instruction how to complete this step [_here_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
   
   
 2. In the very first two cells we will start with specifying:  
@@ -242,7 +242,7 @@ You can verify if your model is hosted by Amazon Sagemaker. Please go to Amazon 
 
 # Inference the model with simple web page
 
-Now it is the time to test our model. We have already deployed it. So, in this step, you will inference the trained model throught simple web page that you will create. We have already did it in Lab 1, that is why pleass refer to detailed instruction how to do this [_here_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#inference-the-model-with-simple-web-page). Please use:
+Now it is the time to test our model. We have already deployed it. So, in this step, you will inference the trained model throught simple web page that you will create. We have already did it in Lab 1, that is why pleass refer to detailed instruction how to do this [_here_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#inference-the-model-with-simple-web-page). Please use:
 
 - `RoleForInvokingTheModel` as a execution role for lambda function that will inference the model;
 - `autopilot-customerchurn-ep-invoker-lambda.py` as a lambda function code that will inference the model;
@@ -255,5 +255,5 @@ You should end up this step with this result:
 ![WWW](https://user-images.githubusercontent.com/36265995/103540324-d37bc980-4e99-11eb-8055-3664e3183024.png)
 
 ***Congratulations!!*** You have successfully completed this lab. Now you can go to Lab 4 where you will retrain the model. Please write down the following values as we will need them to complete Lab 4:
--  ___Endpoint name___: In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
--  ___AutoMLJobName___: In my case it is: `automl-churn-22-13-32-04`. Plese refer to [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job) to find your value.
+-  ___Endpoint name___: In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
+-  ___AutoMLJobName___: In my case it is: `automl-churn-22-13-32-04`. Plese refer to [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job) to find your value.

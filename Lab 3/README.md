@@ -10,9 +10,9 @@ In this lab, you will get hands-on with model retraining. We will build simple b
   
 **In this lab we will go through the following sections:**
 
-- [_Setup_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#setup)
-- [_Lambda function for retraining process_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#lambda-function-for-retraining-process)
-- [_Testing_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#testing)
+- [_Setup_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#setup)
+- [_Lambda function for retraining process_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#lambda-function-for-retraining-process)
+- [_Testing_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%204/README.md#testing)
 
 
 
@@ -62,8 +62,8 @@ In this section we will build lambda function that orchestrates model retraining
 3. Now identify values for environment variables that we will use in lambda function:
 
 - ___PREFIX___: We will use this character string to prefix all artifacts that we will produce during retraining process. This will make your navigation through console much easier. I will use: `MyRetrainerPrefix-`;
-- ___AUTO_ML_JOB_NAME___: The value of `AutoMLJobName` parameter was returned when we launched Amazon Sagemaker Auto Pilot jos in lab 3. In my case it is: `automl-churn-22-13-32-04`. Plese refer to [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job) to find your value.
-- ___ENDPOINT_NAME___: The name of the endpoint where we deployed our model in lab 3. In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/pawelmoniewski/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
+- ___AUTO_ML_JOB_NAME___: The value of `AutoMLJobName` parameter was returned when we launched Amazon Sagemaker Auto Pilot jos in lab 3. In my case it is: `automl-churn-22-13-32-04`. Plese refer to [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job) to find your value.
+- ___ENDPOINT_NAME___: The name of the endpoint where we deployed our model in lab 3. In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
   
 Now please set up all above environment variables for lambda function. You should see something like that in the dashboard:
 
