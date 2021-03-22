@@ -21,11 +21,16 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 1. File → New Terminal
 
-2. Then clone the git repo using below command:
+2. Using termin, download and install xgboost
+
+conda install -c conda-forge xgboost
+pip install xgboost
+
+3. Then clone the git repo using below command:
   
 `git clone https://github.com/pawelmoniewski/AmazonSagemakerWorkshop.git`
   
-3. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
+4. After completion of step 2 you will have “_AmazonSagemakerWorkshop_” folder created in “_left panel_” of the studio:
   
   
   
@@ -33,13 +38,13 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
   
   
   
-4. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
+5. In the left side panel choose “_AmazonSagemakerWorkshop_”, than “_Lab 1_” and open xgboost_customer_churn.ipynb
 
 
  ![Tree](https://user-images.githubusercontent.com/36265995/103892587-1f25b180-50ec-11eb-818d-bd00c55286d6.png)
 
 
-5. Select the kernel for your notebook: “_Python 3(Data Science)_”
+6. Select the kernel for your notebook: “_Python 3(Data Science)_”
 
 
 
@@ -48,7 +53,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-6. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
+7. In the given notebook replace the bucket name with the name of the bucket that you would like to use for this tutorial as shown below:
 
 
 
@@ -56,7 +61,7 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-7. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
+8. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number `1`.
 
 
 
@@ -76,7 +81,7 @@ Now, Let’s download the dataset by running the next cell.
 
 
 
-8. In the next cell you will load the dataset into a pandas dataframe
+In the next cell you will load the dataset into a pandas dataframe
 
 
 
