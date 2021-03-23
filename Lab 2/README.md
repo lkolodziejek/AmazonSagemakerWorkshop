@@ -50,13 +50,13 @@ In this section we will dowload the data set. We are going to use the same data 
 ![](https://user-images.githubusercontent.com/50714479/112118779-ff673b00-8bbc-11eb-850a-6911d9b26ecf.png)
 
 
-2. Read the data into a Pandas data frame and take a look
+2. Take a look on data
 
 It is important to keep in mind that it is good practice to check the dataset to make sure that it has no obvious errors. The Autopilot process can take long time to complete, to inspect the dataset before you start a job.   
 
-It shouldn't be a surprise that we end up with the same output as we did in **_Lab 1_**. We will skip the where we analyze the data set. We want Amazon Sagemaker Autopilot to inspect our data set, and runs a number of model candidates to figure out the optimal combination of data preprocessing steps. Still we need to divide the data into training and testing splits.
+It shouldn't be a surprise that we end up with the same output as we did in **_Lab 1_**. We will skip the where we analyze the data set. We want Amazon Sagemaker Autopilot to inspect our data set, and runs a number of model candidates to figure out the optimal combination of data preprocessing steps. Still we need to divide the data into training and testing sets.
 
-3. Divide the data into training and testing splits.  
+3. Divide the data into training and testing sets.  
   
   
 ![Split](https://user-images.githubusercontent.com/36265995/102880525-be3f7d80-444b-11eb-872f-ba86a28060e7.png)
@@ -249,7 +249,9 @@ In _"Configuration"_ navigate to _"General configuration"_. Click _"Edit"_.
 
 ![LambdaTimeoutIncrease](https://user-images.githubusercontent.com/50714479/112128383-ab615400-8bc6-11eb-8d57-939597ae8e7c.png)
 
-You should end up this step with this result:
+Finally, you should be able to access your webpage as described in Lab1, from your s3 bucket.
+
+This should provide following result:
 
 ![WWW](https://user-images.githubusercontent.com/36265995/103540324-d37bc980-4e99-11eb-8055-3664e3183024.png)
 

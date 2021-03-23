@@ -1,12 +1,12 @@
 # Lab 3 - Model retraining
 
-In this lab, you will get hands-on with model retraining. We will build simple but fully automated solution to retrain the model whenever a completely new dataset is delivered. To make our live simpler we will use the best candidate we have selected in Lab 3. Our pipeline works as follows:
+In this lab, you will get hands-on with model retraining. We will build simple but fully automated solution to retrain the model whenever a completely new dataset is delivered. To make our live simpler we will use the best candidate we have selected in Lab 2. Our pipeline works as follows:
 
 - [x] You collect a new data and add it on top existing training dataset;
-- [x] With this new training dataset you retrain the model that was selected as a best candidate in Lab 3;
+- [x] With this new training dataset you retrain the model that was selected as a best candidate in Lab 2;
 - [x] We will use the same algorithm, input and output configuration, resource configuration, stopping condition and hyper parameters configuration as well;
 - [x] With this configuration you will start the training job and build the model;
-- [x] Finally you will update endpoint from Lab 3 with the new model;  
+- [x] Finally you will update endpoint from Lab 2 with the new model;  
   
 **In this lab we will go through the following sections:**
 
