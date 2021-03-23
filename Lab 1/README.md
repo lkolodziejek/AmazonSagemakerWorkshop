@@ -56,31 +56,17 @@ In this step you will use your Amazon SageMaker Studio notebook to preprocess th
 
 
 
-7. Execute the first two cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number, e.g. `1`.
+7. Execute the first three cells by pressing `Shift`+`Enter` in each of the cells. While the code runs, an `*` appears between the square brackets. After a few seconds, the code execution will complete, the `*` will be replaced with the number, e.g. `1`.
 
 
 
-This code will import some libraries in your Jupyter notebook environment:
+This code will create s3 bucket, install XGBoost and import some libraries in your Jupyter notebook environment.
 
 
-
-![](https://user-images.githubusercontent.com/36265995/102478214-a20f9b00-405d-11eb-9e6c-6cb03d45c0d6.png)
-
+8. Now, Let’s download and load the dataset by running the next cell:
 
 
-8. Now, Let’s download the dataset by running the next cell.
-
-
-
-![](https://user-images.githubusercontent.com/36265995/102478876-6d501380-405e-11eb-80d3-ab230da23d00.png)
-
-
-
-In the next cell you will load the dataset into a pandas dataframe
-
-
-
-![](https://user-images.githubusercontent.com/36265995/102479357-15fe7300-405f-11eb-9bc7-a74d48473499.png)
+![](https://user-images.githubusercontent.com/50714479/112118779-ff673b00-8bbc-11eb-850a-6911d9b26ecf.png)
 
 
 
@@ -96,7 +82,7 @@ In the next cell you will load the dataset into a pandas dataframe
 
 
 
-11. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
+10. `Phone` takes on too many unique values to be of any practical use. It's possible parsing out the prefix could have some value, but without more context on how these are allocated, we should avoid using it. Most of the numeric features are surprisingly nicely distributed, with many showing bell-like gaussianity.  `VMail Message` being a notable exception (and `Area Code` showing up as a feature we should convert to non-numeric).
 
 
 
@@ -104,7 +90,7 @@ In the next cell you will load the dataset into a pandas dataframe
 
 
 
-12. Next let's look at the relationship between each of the features and our target variable.
+11. Next let's look at the relationship between each of the features and our target variable.
 
 
 
@@ -122,7 +108,7 @@ Interestingly we see that churners appear:
 In addition, we see that churners take on very similar distributions for features like Day Mins and Day Charge. That's not surprising as we'd expect minutes spent talking to correlate with charges. Let's dig deeper into the relationships between our features.
 
 
-13. Now let’s look at how our features relate to one another
+12. Now let’s look at how our features relate to one another
 
 
 
@@ -136,7 +122,7 @@ We see several features that essentially have 100% correlation with one another.
 
 
 
-14. Let's remove one feature from each of the highly correlated pairs: Day Charge from the pair with Day Mins, Night Charge from the pair with Night Mins, Intl Charge from the pair with Intl Mins:
+13. Let's remove one feature from each of the highly correlated pairs: Day Charge from the pair with Day Mins, Night Charge from the pair with Night Mins, Intl Charge from the pair with Intl Mins:
 
 
 
@@ -144,7 +130,7 @@ We see several features that essentially have 100% correlation with one another.
 
 
 
-15. Now we will convert all the categorical variables using one hot encoding
+14. Now we will convert all the categorical variables using one hot encoding
 
 
 
@@ -152,20 +138,20 @@ We see several features that essentially have 100% correlation with one another.
 
 
 
-16. We will split our data set into 3 channels: train, test, validation set:
+15. We will split our data set into 3 channels: train, test, validation set:
 
 
 
 ![](https://user-images.githubusercontent.com/36265995/102485622-2830df00-4068-11eb-912a-2c010b48f9ce.png)
 
 
-17. Now we will upload the final data into Amazon S3 bucket.
+16. Now we will upload the final data into Amazon S3 bucket.
 
 
 ![](https://user-images.githubusercontent.com/36265995/102492092-6ed70700-4071-11eb-92ed-84204e4afa60.png)
 
 
-18. Now quickly check the S3 bucket through the console to make sure you have uploaded the train.csv and validation.csv
+17. Now quickly check the S3 bucket through the console to make sure you have uploaded the train.csv and validation.csv
 
 
 ![](https://user-images.githubusercontent.com/36265995/102492673-50bdd680-4072-11eb-8b61-c467b6911b84.png)
@@ -281,15 +267,15 @@ In the line 8 `ENDPOINT_NAME` environment variable was defined. This is the name
 
 ![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
 
-11. While we have identified the name of the Amazon Sagemaker endpoint that we created we need to configure environment variable `ENDPOINT_NAME`. Scroll down the AWS Lambda page to find “_Environment variables_”. Click “_Edit_”.
+11. While we have identified the name of the Amazon Sagemaker endpoint that we created we need to configure environment variable `ENDPOINT_NAME`. On AWS Lambda page navigate to “_Configuration_” and then “_Environment variables_”. Click “_Edit_”.
 
-![](https://user-images.githubusercontent.com/36265995/102628639-4b33bf80-414a-11eb-9a80-f3ee942a69af.png)
+![](https://user-images.githubusercontent.com/50714479/112120731-d647aa00-8bbe-11eb-9f07-b4b6d66a2ad3.png)
 
 12. Select “_Add environment variable_”. Provide Key `ENDPOINT_NAME` and the value that you identified in step 10. Please keep in mind that your value will be differnet then value presented here. Click “_Save_”
 
 ![](https://user-images.githubusercontent.com/36265995/102629134-06f4ef00-414b-11eb-8dea-153156b1e5c2.png)
 
-13. You are now ready do deploy your function. Scroll up to the top of lambda code editor. In the top right corner select “_Deploy_”
+13. You are now ready do deploy your function. Click on “_Code_” lambda code editor. In the top right corner select “_Deploy_”
 
 ![](https://user-images.githubusercontent.com/36265995/102627384-6bfb1580-4148-11eb-94d1-b2c1b3b4aabd.png)
 
@@ -299,7 +285,7 @@ Scroll up to the top of the page. Here you will find graphical designer that mak
 
 ![](https://user-images.githubusercontent.com/36265995/102633979-7a016400-4151-11eb-97b7-178a94267b54.png)
 
-14. Please fill “_Trigger configuration_” page as follow, than select “_Add_”
+15. Please fill “_Trigger configuration_” page as follow, than select “_Add_”
 
 ![](https://user-images.githubusercontent.com/36265995/102634407-14fa3e00-4152-11eb-8f79-903362c55035.png)
 
@@ -311,48 +297,33 @@ Also the new section “_API Gateway_” has appeard. Expand the “_Details_”
 
 ![](https://user-images.githubusercontent.com/36265995/102635755-0ca30280-4154-11eb-9396-6ae239d355a7.png)
 
-15. Finally we can create our simple web page to have more user friendy interface to inference our ML model.
+16. Finally we can create our simple web page to have more user friendy interface to inference our ML model.
 
 We star with the the file `xgboost-customerchurn-website.html`. This is very simple html file that creates simple form with the input for vector of features that ML model required. Please open the html source code. In 8th line `endpoint` variable is defined. Use https endpoint address that we copied in previous step and assign it to this variable.
 
 ![](https://user-images.githubusercontent.com/36265995/102639353-39a5e400-4159-11eb-937e-07953cf21145.png)
 
-16. Now it is time to set up and deploy our web page.
+17. Now it is time to set up and deploy our web page.
 
-We will use Amazon S3 service to host our web page. To keep this it as simple as possible we will reuse a S3 bucket that we have created at the very beginning of this lab. We have created bucket within notebook `xgboost_customer_churn.ipynb` by replacing the `REPLACE_ME` string with desired name.
+Let's navigate to Amazon S3 service to create new public bucket for hosting host our web page. On Amazon S3 service navigate to “_Create bucket_”. Provide globally unique bucket name.
 
-![](https://user-images.githubusercontent.com/36265995/102475949-ce75e800-405a-11eb-935e-636c0be8cf3d.png)
+18. On  “_Block Public Access settings for this bucket_” section untick “_Block all public access_”, acknowledge warning and click “_Create bucket_”
 
-Please open Amazon S3 service dashbord and go the bucket you have created:
+![](https://user-images.githubusercontent.com/50714479/112122544-adc0af80-8bc0-11eb-9f3f-a8ced2233135.png)
 
-![](https://user-images.githubusercontent.com/36265995/102661586-6b30a680-417d-11eb-9358-9fb4c54b8bec.png)
-
-17. Select “_Permissions_” tab and then “_Edit_” button in “_Block public access (bucket settings)_” section:
-
-![](https://user-images.githubusercontent.com/36265995/102663047-573a7400-4180-11eb-8837-c01e23ca573a.png)
-
-18. Unmark “_Block all public access_” and click “_Save changes_”
-
-![](https://user-images.githubusercontent.com/36265995/102663159-8d77f380-4180-11eb-9244-44209ef1baa2.png)
-
-Confirm that:
-
-![](https://user-images.githubusercontent.com/36265995/102663240-ae404900-4180-11eb-9631-4b00c1103541.png)
-
-![](https://user-images.githubusercontent.com/36265995/102663275-c748fa00-4180-11eb-962b-a219e9e7d467.png)
-
-19. Once again select “_Objects_” tab and click “_Upload_” button. Next select “_Add files_”
+19. Navigate to newly created bucket. In “_Objects_” tab click “_Upload_” button. Next select “_Add files_”
 
 Upload file `xgboost-customerchurn-website.html` file and leave all parameters with default values.
 
-![](https://user-images.githubusercontent.com/36265995/102663714-ad5be700-4181-11eb-8b19-52860f4f351f.png)
+![](https://user-images.githubusercontent.com/50714479/112123841-f7f66080-8bc1-11eb-8f5c-17b25527095d.png)
 
 Finally click Upload:
 
+20. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actions_” button and select “_Make public_” option.
 
-20. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actions_” button and select “_Make public_” option:
+![](https://user-images.githubusercontent.com/50714479/112124201-61766f00-8bc2-11eb-952f-b43ac7deffea.png)
 
-![](https://user-images.githubusercontent.com/36265995/102664348-d630ac00-4182-11eb-831b-e095ccdef1b7.png)
+Confirm choice on the next screen by clicking “_Make public_”.
 
 21. Click on the file link `xgboost-customerchurn-website.html`. You will be redirected to the object details page, In “_Object Overview_” section find “_Object URL_” and select it:
 
@@ -362,4 +333,6 @@ Finally click Upload:
 
 ![](https://user-images.githubusercontent.com/36265995/102665148-94a10080-4184-11eb-81e9-f5bb0ed1e8e4.png)
 
-**Congratulations!!** You successfully completed this lab!!
+**Congratulations!!** You successfully completed XGBoost prediction.
+
+Now, please continue with Jupyter Notebook onwards from Evaluate section
