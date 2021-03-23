@@ -317,7 +317,7 @@ Upload file `xgboost-customerchurn-website.html` file and leave all parameters w
 
 ![](https://user-images.githubusercontent.com/50714479/112123841-f7f66080-8bc1-11eb-8f5c-17b25527095d.png)
 
-Finally click Upload:
+Finally click Upload.
 
 20. Go back to your bucket. Mark the `xgboost-customerchurn-website.html` file, click “_Actions_” button and select “_Make public_” option.
 

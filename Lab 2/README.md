@@ -21,12 +21,9 @@ In this lab SageMaker Autopilot first inspects your data set, and runs a number 
 
 # Setup
 
-1. We will start with opening Notebook `autopilot_customer_churn.ipynb` in “AmazonSagemakerWorkshop/Lab 3” folder. We will skip detailed instruction how to procees as you are the expert now.  
+1. We will start with opening Notebook `autopilot_customer_churn.ipynb` in “AmazonSagemakerWorkshop/Lab 2” folder. We will skip detailed instruction how to procees as you are the expert now.  
   
-  
-![Tree](https://user-images.githubusercontent.com/36265995/103892748-61e78980-50ec-11eb-9674-04f0071f7ed4.png)
-   
-   
+
 In case You did not follow this workshop in order, you can find detailed instruction how to complete this step [_here_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%201/README.md#data-preparation).
   
   
@@ -47,17 +44,15 @@ In case You did not follow this workshop in order, you can find detailed instruc
 
 In this section we will dowload the data set. We are going to use the same data set as we did in **_Lab 1_** as we are already familiar with it. Just to briefly recap the dataset we use is publicly available and was mentioned in the book [Discovering Knowledge in Data](https://www.amazon.com/dp/0470908742/) by Daniel T. Larose. It is attributed by the author to the University of California Irvine Repository of Machine Learning Datasets.
 
-1. Let's download that dataset now:  
-  
-  
-![Download](https://user-images.githubusercontent.com/36265995/102876391-67cf4080-4445-11eb-9c9a-fb353ec878d1.png)
+1. Now, Let’s download and load the dataset by running the next cell:
+
+
+![](https://user-images.githubusercontent.com/50714479/112118779-ff673b00-8bbc-11eb-850a-6911d9b26ecf.png)
 
 
 2. Read the data into a Pandas data frame and take a look
 
 It is important to keep in mind that it is good practice to check the dataset to make sure that it has no obvious errors. The Autopilot process can take long time to complete, to inspect the dataset before you start a job.   
-
-![LoadData](https://user-images.githubusercontent.com/36265995/102878913-496b4400-4449-11eb-8bff-5a0a844a733a.png)
 
 It shouldn't be a surprise that we end up with the same output as we did in **_Lab 1_**. We will skip the where we analyze the data set. We want Amazon Sagemaker Autopilot to inspect our data set, and runs a number of model candidates to figure out the optimal combination of data preprocessing steps. Still we need to divide the data into training and testing splits.
 
@@ -248,12 +243,18 @@ Now it is the time to test our model. We have already deployed it. So, in this s
 - `autopilot-customerchurn-ep-invoker-lambda.py` as a lambda function code that will inference the model;
 - `autopilot-customerchurn-website.html` as a html code for www page (interface to the model);
 
-___!!! Also please set lambda function timeout for at least 5 seconds !!!___
+Additionally to steps done in Lab1, increase Lambda Execution Timeout to at least 10 seconds.
+
+In _"Configuration"_ navigate to _"General configuration"_. Click _"Edit"_.
+
+![LambdaTimeoutIncrease](https://user-images.githubusercontent.com/50714479/112128383-ab615400-8bc6-11eb-8d57-939597ae8e7c.png)
 
 You should end up this step with this result:
 
 ![WWW](https://user-images.githubusercontent.com/36265995/103540324-d37bc980-4e99-11eb-8055-3664e3183024.png)
 
-***Congratulations!!*** You have successfully completed this lab. Now you can go to Lab 4 where you will retrain the model. Please write down the following values as we will need them to complete Lab 4:
+***Congratulations!!*** You have successfully completed this lab. Now you can go to Lab 3 where you will retrain the model. Please write down the following values as we will need them to complete Lab 3:
 -  ___Endpoint name___: In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
 -  ___AutoMLJobName___: In my case it is: `automl-churn-22-13-32-04`. Plese refer to [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job) to find your value.
+
+___!!! Please don't proceed with Cleanup section of Jupyter's Notebooks of this Lab, unless you have completed or decided to skip Lab3 !!!___

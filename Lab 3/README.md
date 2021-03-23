@@ -65,11 +65,19 @@ In this section we will build lambda function that orchestrates model retraining
 - ___AUTO_ML_JOB_NAME___: The value of `AutoMLJobName` parameter was returned when we launched Amazon Sagemaker Auto Pilot jos in lab 3. In my case it is: `automl-churn-22-13-32-04`. Plese refer to [_Launching the Amazon Sagemaker Autopilot Job_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#launching-the-amazon-sagemaker-autopilot-job) to find your value.
 - ___ENDPOINT_NAME___: The name of the endpoint where we deployed our model in lab 3. In my case it is: `tuning-job-1-68b0d889fb234badb4-012-ef007be004-11-32-13-ep`. Plese refer to [_Deploy the best model_](https://github.com/lkolodziejek/AmazonSagemakerWorkshop/blob/main/Lab%203/README.md#deploy-the-best-model) to find your value.
   
-Now please set up all above environment variables for lambda function. You should see something like that in the dashboard:
+Now please set up all above environment variables for lambda function. This can be done by navigating in Lambda screen to _"Configuration"_ and _"Environment variables"_. Click _"Edit"_.
 
-![EviorementVariables](https://user-images.githubusercontent.com/36265995/103646687-5a907680-4f5a-11eb-90fb-056630939c29.png)
+You should see something like this in the dashboard:
+
+![EviorementVariables](https://user-images.githubusercontent.com/50714479/112128848-1b6fda00-8bc7-11eb-9a7e-8f5e27f73049.png)
 
 4. Increase the execution timeout to 15 minutes for your lambda function.
+
+In _"Configuration"_ navigate to _"General configuration"_. Click _"Edit"_.
+
+![LambdaTimeoutIncrease](https://user-images.githubusercontent.com/50714479/112127728-09416c00-8bc6-11eb-82df-64a554eb4b5c.png)
+
+Click _"Save"_ and navigate back to _"Code"_.
 
 5. Now, copy the content of the `autopilot-customerchurn-retrainer-lambda.py` file into lambda code editor.
 
