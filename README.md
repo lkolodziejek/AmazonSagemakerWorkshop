@@ -12,12 +12,12 @@ Welcome to Amazon Sagemaker Workshops. Going through this material you will lear
 Amazon SageMaker Studio is a web-based, integrated development environment (IDE) for machine learning that lets you build, train, debug, deploy, and monitor your machine learning models. Studio provides all the tools you need to take your models from experimentation to production while boosting your productivity.
 
 Here are the one-time steps for onboarding to Amazon SageMaker Studio using Quick Start:
-1. Open AWS console and switch to “_eu-west-1_” (Ireland) region. (You can choose other region as well wherever [_SageMaker Studio is available_](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html))
+1. Open AWS console and switch to Frankfurt region. (You can choose other region as well wherever [_SageMaker Studio is available_](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html))
 2. Under services search for “_Amazon SageMaker_”
 3. Click on “_Amazon SageMaker Studio_”
 4. Click on “_Quick start_”
 5. Define “_User name_” as “_machinelearning_”
-6. Select “_Create a new role_” under Execution role. Also make sure you are selecting specific S3 Bucket where all dataset and ML models will be pushed. If you don’t have any pre created S3 Bucket created then please create the same in “_eu-west-1_” region. Click on “_Create role_”
+6. Select “_Create a new role_” under Execution role. Also make sure you are selecting specific S3 Bucket where all dataset and ML models will be pushed. If you don’t have any pre created S3 Bucket created then please create the same Frankfurt region. Click on “_Create role_”
 7. Enter the Role ARN in “_Custom IAM role ARN_” created on step 6 (not required when creating new role)
 8. Click “_Submit_”
 
